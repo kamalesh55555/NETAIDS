@@ -6,7 +6,7 @@ This repository contains the source code for the **ICISD Web Application**, a mo
 
 ## 🚀 Live Deployment
 
-🔗 https://srm-icisd-improved-st9q.vercel.app/
+🔗 [Click Here](https://netaids.vercel.app/)
 
 ---
 
