@@ -4,16 +4,18 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { SignedIn, UserButton } from "@clerk/clerk-react";
 import { useNavigate, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const navLinks = [
-  { name: "Home", href: "#hero" },
-  { name: "Event Info", href: "#about" },
-  { name: "Schedule", href: "#schedule" },
-  { name: "College Info", href: "#college-info" },
-  { name: "Contact", href: "#contact" },
+  { key: "home", href: "#hero" },
+  { key: "eventInfo", href: "#about" },
+  { key: "schedule", href: "#schedule" },
+  { key: "collegeInfo", href: "#college-info" },
+  { key: "contact", href: "#contact" },
 ];
 
 export const Navbar = () => {
+  const { t, i18n } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -108,7 +110,7 @@ export const Navbar = () => {
           <div className="hidden lg:flex items-center gap-0.5">
             {navLinks.map((link) => (
               <button
-                key={link.name}
+                key={link.key}
                 onClick={() => handleNavClick(link.href)}
                 className={`relative px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 ${
                   isScrolled
@@ -116,7 +118,7 @@ export const Navbar = () => {
                     : `text-white/90 hover:text-white hover:bg-white/10 ${isActive(link.href) ? "text-white bg-white/15" : ""}`
                 }`}
               >
-                {link.name}
+                {t(`navbar.${link.key}`)}
                 {/* Active indicator dot */}
                 {isActive(link.href) && (
                   <motion.div
@@ -134,6 +136,19 @@ export const Navbar = () => {
           {/*right logo*/}
           <div className="hidden lg:flex items-center gap-4">
             
+            {/* Language Switcher */}
+            <select
+              value={i18n.language}
+              onChange={(e) => i18n.changeLanguage(e.target.value)}
+              className={`text-sm font-medium rounded-md px-2 py-1 outline-none transition-colors border ${
+                isScrolled ? "bg-white text-slate-700 border-slate-200" : "bg-white/10 text-white border-white/20"
+              }`}
+            >
+              <option value="en" className="text-slate-800">English</option>
+              <option value="ta" className="text-slate-800">தமிழ்</option>
+              <option value="cy" className="text-slate-800">Welsh</option>
+            </select>
+
             {/* AICTE VAANI Top Right Logo */}
             <div className="bg-white p-1 rounded-md shadow-sm border border-slate-100 flex items-center justify-center">
               <img 
@@ -212,7 +227,7 @@ export const Navbar = () => {
               <div className="space-y-2">
                 {navLinks.map((link) => (
                   <button
-                    key={link.name}
+                    key={link.key}
                     onClick={() => handleNavClick(link.href)}
                     className={`
                       w-full
@@ -228,7 +243,7 @@ export const Navbar = () => {
                       }
                     `}
                   >
-                    {link.name}
+                    {t(`navbar.${link.key}`)}
                   </button>
                 ))}
               </div>

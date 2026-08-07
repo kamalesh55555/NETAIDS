@@ -1,0 +1,191 @@
+{
+  "navbar": {
+    "home": "Home",
+    "eventInfo": "Event Info",
+    "schedule": "Schedule",
+    "collegeInfo": "College Info",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "National Level Conference",
+    "location": "SRM Institute of Science and Technology · Vadapalani Campus · Chennai - 600026",
+    "titlePrefix": "NCTAIDS",
+    "titleSuffix": "2026",
+    "subtitle": "National Conference on Tamil Artificial Intelligence and Data Science",
+    "descriptionPrefix": "National Level Conference on ",
+    "descriptionHighlight1": "TAMIL AI",
+    "descriptionAnd": " & ",
+    "descriptionHighlight2": "DATA SCIENCE",
+    "organisedBy": "Organised by the ",
+    "department": "Department of Computer Science & Engineering",
+    "date": "17th – 18th September 2026",
+    "time": "9:00 AM TO 3:30 PM",
+    "countdown": {
+      "days": "DAYS",
+      "hours": "HOURS",
+      "minutes": "MINUTES",
+      "seconds": "SECONDS"
+    },
+    "registerBtn": "Register Now"
+  },
+  "about": {
+    "badge": "About the Conference",
+    "title1": "TAMIL AI & ",
+    "title2": "DATA SCIENCE",
+    "desc1_part1": "The National Level Conference on TAMIL AI & DATA SCIENCE ",
+    "desc1_part2": " provides a premier global forum for researchers, academicians, and industry experts to present and exchange innovative ideas shaping intelligent and digitally enabled systems.",
+    "desc2_part1": "NCTAIDS'26 focuses on cutting-edge advancements in ",
+    "desc2_part2": " that are transforming industries and society.",
+    "techList": "Artificial Intelligence, Data Analytics, Automation, Internet of Things, Cloud Computing, Cybersecurity, and emerging digital technologies ",
+    "feature1": "Interdisciplinary Research",
+    "feature2": "Academia–Industry Interaction",
+    "unlock": "Click to unlock",
+    "hoverZoom": "Hover / Click to zoom"
+  },
+  "schedule": {
+    "titlePrefix": "Conference ",
+    "titleSuffix": "Schedule",
+    "subtitle": "Follow the flow of ideas on ",
+    "dateHighlight": "17th & 18th September 2026",
+    "topic": "Topic:",
+    "room": "Room:",
+    "chair": "Chair:",
+    "day1": {
+      "date": "17th September 2026",
+      "title": "Day 1 Schedule",
+      "events": [
+        {
+          "time": "Morning Session",
+          "title": "Session I",
+          "speaker": "Dr. Raj Ramachandran, Senior Lecturer in Technologies, Cardiff School of Technologies, Cardiff",
+          "type": "keynote",
+          "room": "Main Auditorium, Vadapalani Campus",
+          "topics": "Future of Neural Networks in Tamil NLP",
+          "chair": "Dr. S. Niveditha"
+        },
+        {
+          "time": "Morning Session",
+          "title": "Session II",
+          "speaker": "Dr. R. Rajkumar, Associate Professor, Vellore Institute of Technology (VIT), Chennai",
+          "type": "session",
+          "room": "Seminar Hall 1",
+          "topics": "Data Science methodologies for Regional Languages",
+          "chair": "Dr. G. Paavai Anand"
+        },
+        {
+          "time": "Afternoon Session",
+          "title": "Session III",
+          "speaker": "Mr. Venkatarangan Thirumalai, Founder Catalyst, Vishwak Solutions",
+          "type": "session",
+          "room": "Main Auditorium",
+          "topics": "Startup Ecosystem in Tamil Tech",
+          "chair": "Dr. G. Paavai Anand"
+        },
+        {
+          "time": "Afternoon Session",
+          "title": "Session IV",
+          "speaker": "Dr S. Chitrakala, Professor, DCSE & Director of Centre for Immersive Technologies, Anna University, Chennai",
+          "type": "keynote",
+          "room": "Virtual Mode / Seminar Hall 2",
+          "topics": "Immersive Technologies and AI",
+          "chair": "Dr. S. Niveditha"
+        }
+      ]
+    },
+    "day2": {
+      "date": "18th September 2026",
+      "title": "Day 2 Schedule",
+      "events": [
+        {
+          "time": "Morning Session",
+          "title": "Session V",
+          "speaker": "Mr. Akash V, Associate System Engineer, IBM",
+          "type": "session",
+          "room": "Main Auditorium",
+          "topics": "Enterprise AI Solutions & Integration",
+          "chair": "Dr. S. Niveditha"
+        },
+        {
+          "time": "Morning Session",
+          "title": "Session VI",
+          "speaker": "Dr. Subalalitha C.N, Founder of the AI startup FirstLanguage Technologies",
+          "type": "keynote",
+          "room": "Seminar Hall 1",
+          "topics": "Building LLMs for Indic Languages",
+          "chair": "Dr. G. Paavai Anand"
+        },
+        {
+          "time": "Afternoon Session",
+          "title": "Session VII",
+          "speaker": "Mr. Aazhi Senthilnathan, Founder & CEO, Ailaysa",
+          "type": "session",
+          "room": "Main Auditorium",
+          "topics": "Language Tech Innovations",
+          "chair": "Dr. G. Paavai Anand"
+        },
+        {
+          "time": "Afternoon Session",
+          "title": "Session VIII",
+          "speaker": "Dr. Na.e Kodaikkaavirinaadan U, Tech Lead Tech Mahindra, Chennai",
+          "type": "keynote",
+          "room": "Seminar Hall 2",
+          "topics": "Scaling Data Science Pipelines in Production",
+          "chair": "Dr. S. Niveditha"
+        }
+      ]
+    }
+  },
+  "collaborators": {
+    "aicteSponsored": "Sponsored",
+    "supportedBy": "Supported By",
+    "accreditationsTitle": "Institutional ",
+    "accreditationsHighlight": "Accreditations",
+    "rankingsTitle": "University ",
+    "rankingsHighlight": "Rankings",
+    "accreditations": [
+      {
+        "name": "NAAC A++ Grade",
+        "subtitle": "Accredited with A++ Grade",
+        "logo": "/naac.png"
+      },
+      {
+        "name": "Institution's Innovation Council",
+        "subtitle": "Ministry of HRD Initiative",
+        "logo": "/iic.png"
+      }
+    ],
+    "rankings": [
+      { "name": "NIRF", "desc": "Ranked 11th University (2025)" },
+      { "name": "QS World University Rankings", "desc": "Ranked one among 54 Indian Universities (2026)" },
+      { "name": "Times Higher Education (THE)", "desc": "Ranked one among 91 Indian Universities (2025)" },
+      { "name": "Shanghai Ranking", "desc": "Ranked 8-9 in Indian Universities (2025)" },
+      { "name": "Nature Index", "desc": "Ranked one among 18 Indian Universities (2025)" },
+      { "name": "Green Metric", "desc": "Ranked one among 3 Indian Universities (2024)" }
+    ]
+  },
+  "contact": {
+    "badge": "Contact",
+    "title": "Get in Touch",
+    "description": "Reach out to the NCTAIDS'26 organizing committee for any conference-related queries.",
+    "emailLabel": "Email",
+    "contactLabel": "Contact",
+    "phone": "Conference Secretary – +91 80561 25082",
+    "locationLabel": "Location",
+    "address1": "SRM Institute of Science & Technology",
+    "address2": "Vadapalani Campus, Chennai – 600026",
+    "mapLabel": "SRM IST, Vadapalani"
+  },
+  "footer": {
+    "title": "NCTAIDS'26",
+    "description": "National Level Conference on TAMIL AI & DATA SCIENCE (NCTAIDS'26), organized by the Department of Computer Science & Engineering, SRM Institute of Science and Technology.",
+    "dateText": "17th & 18th September 2026 · Hybrid Mode",
+    "quickLinks": "Quick Links",
+    "contactCoordinators": "Contact Co-ordinators",
+    "addressLine1": "Department of Computer Science & Engineering",
+    "addressLine2": "SRM Institute of Science and Technology",
+    "addressLine3": "Vadapalani Campus, Chennai – 600026",
+    "coordinator1": "Dr. G. Paavai Anand",
+    "coordinator2": "Ms. S. Niveditha",
+    "copyright": "© 2026 NCTAIDS'26 · Department of Computer Science and Engineering, SRM IST Vadapalani."
+  }
+}

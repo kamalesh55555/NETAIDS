@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Clock, Users, Mic2, CalendarDays, BrainCircuit, ChevronDown } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const scheduleData = {
   day1: {
@@ -103,10 +104,14 @@ const badgeStyles = {
   session: "bg-orange-50 text-orange-700 border-orange-200",
 };
 
+const getIcon = (type: string) => type === "keynote" ? Mic2 : Users;
+
 export const ScheduleSection = () => {
+  const { t } = useTranslation();
   const [activeDay, setActiveDay] = useState<"day1" | "day2">("day1");
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
 
+  const scheduleData = t("schedule", { returnObjects: true }) as any;
   const currentSchedule = scheduleData[activeDay];
 
   return (
@@ -124,10 +129,10 @@ export const ScheduleSection = () => {
           className="text-center max-w-3xl mx-auto mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight">
-            Conference <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-500">Schedule</span>
+            {t("schedule.titlePrefix")} <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-500">{t("schedule.titleSuffix")}</span>
           </h2>
           <p className="text-slate-600 text-lg md:text-xl">
-            Follow the flow of ideas on <strong>17th & 18th September 2026</strong>
+            {t("schedule.subtitle")} <strong>{t("schedule.dateHighlight")}</strong>
           </p>
         </motion.div>
 
@@ -188,14 +193,16 @@ export const ScheduleSection = () => {
 
             {/* The Events */}
             <div className="space-y-12 md:space-y-24 relative z-10 pb-12">
-              {currentSchedule.events.map((event, idx) => {
+              {currentSchedule.events.map((event: any, idx: number) => {
                 const isEven = idx % 2 === 0;
+                event.icon = getIcon(event.type);
                 return (
                   <SessionNode 
                     key={idx} 
                     event={event} 
                     align={isEven ? "left" : "right"} 
                     delay={idx * 0.3 + 0.5} 
+                    t={t}
                   />
                 );
               })}
@@ -212,7 +219,7 @@ export const ScheduleSection = () => {
 // Helper Components
 // ---------------------------------------------------------
 
-const SessionNode = ({ event, align, delay = 0 }: { event: any; align: "left" | "right", delay?: number }) => {
+const SessionNode = ({ event, align, delay = 0, t }: { event: any; align: "left" | "right", delay?: number, t: any }) => {
   const Icon = event.icon;
   const [isExpanded, setIsExpanded] = useState(false);
   
@@ -295,15 +302,15 @@ const SessionNode = ({ event, align, delay = 0 }: { event: any; align: "left" | 
             >
               <div className="pt-6 border-t border-slate-200 grid gap-4 text-sm text-slate-600 bg-slate-50/50 rounded-2xl">
                 <div className="flex items-start gap-3">
-                  <div className="font-bold min-w-[70px] text-slate-800">Topic:</div>
+                  <div className="font-bold min-w-[70px] text-slate-800">{t("schedule.topic")}</div>
                   <div>{event.topics}</div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="font-bold min-w-[70px] text-slate-800">Room:</div>
+                  <div className="font-bold min-w-[70px] text-slate-800">{t("schedule.room")}</div>
                   <div>{event.room}</div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="font-bold min-w-[70px] text-slate-800">Chair:</div>
+                  <div className="font-bold min-w-[70px] text-slate-800">{t("schedule.chair")}</div>
                   <div>{event.chair}</div>
                 </div>
               </div>

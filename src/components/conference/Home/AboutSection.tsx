@@ -2,8 +2,10 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Users, Cpu, Sparkles } from "lucide-react";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export const AboutSection = () => {
+  const { t } = useTranslation();
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -54,30 +56,26 @@ export const AboutSection = () => {
 
             <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-50 text-emerald-600 text-sm font-semibold mb-4 border border-emerald-100">
               <Sparkles className="w-3.5 h-3.5" />
-              About the Conference
+              {t('about.badge')}
             </span>
 
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6 leading-tight">
-              TAMIL AI &{" "}
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-emerald-600 to-teal-500">DATA SCIENCE</span>
+              {t('about.title1')}
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-emerald-600 to-teal-500">{t('about.title2')}</span>
             </h2>
 
             <p className="text-slate-600 leading-relaxed mb-4 text-sm sm:text-base">
-              The National Level Conference on TAMIL AI & DATA SCIENCE
-              <strong>(NCTAIDS'26)</strong> provides a premier
-              global forum for researchers, academicians, and industry experts
-              to present and exchange innovative ideas shaping intelligent and
-              digitally enabled systems.
+              {t('about.desc1_part1')}
+              <strong>(NCTAIDS'26)</strong>
+              {t('about.desc1_part2')}
             </p>
 
             <p className="text-slate-600 leading-relaxed mb-6 text-sm sm:text-base">
-              NCTAIDS'26 focuses on cutting-edge advancements in{" "}
+              {t('about.desc2_part1')}
               <strong>
-                Artificial Intelligence, Data Analytics, Automation, Internet of
-                Things, Cloud Computing, Cybersecurity, and emerging digital
-                technologies{" "}
+                {t('about.techList')}
               </strong>
-              that are transforming industries and society.
+              {t('about.desc2_part2')}
             </p>
 
             <div className="flex flex-wrap items-center gap-4">
@@ -86,7 +84,7 @@ export const AboutSection = () => {
                   <Cpu className="w-4 h-4" />
                 </div>
                 <span className="font-semibold text-sm">
-                  Interdisciplinary Research
+                  {t('about.feature1')}
                 </span>
               </div>
 
@@ -95,7 +93,7 @@ export const AboutSection = () => {
                   <Users className="w-4 h-4" />
                 </div>
                 <span className="font-semibold text-sm">
-                  Academia–Industry Interaction
+                  {t('about.feature2')}
                 </span>
               </div>
             </div>
@@ -124,7 +122,7 @@ export const AboutSection = () => {
               />
 
               <span className="absolute top-3 right-3 text-[10px] px-2.5 py-1 bg-black/60 text-white rounded-full z-20 backdrop-blur-sm border border-white/10">
-                {locked ? "Click to unlock" : "Hover / Click to zoom"}
+                {locked ? t('about.unlock') : t('about.hoverZoom')}
               </span>
 
               {(showMagnifier || locked) && (

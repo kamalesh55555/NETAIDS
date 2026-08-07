@@ -1,29 +1,13 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-
-const accreditations = [
-  {
-    name: "NAAC A++ Grade",
-    logo: "/naac.png",
-    subtitle: "Accredited with A++ Grade"
-  },
-  {
-    name: "Institution's Innovation Council",
-    logo: "/iic.png",
-    subtitle: "Ministry of HRD Initiative"
-  }
-];
-
-const rankings = [
-  { name: "NIRF", desc: "Ranked 11th University (2025)" },
-  { name: "QS World University Rankings", desc: "Ranked one among 54 Indian Universities (2026)" },
-  { name: "Times Higher Education (THE)", desc: "Ranked one among 91 Indian Universities (2025)" },
-  { name: "Shanghai Ranking", desc: "Ranked 8-9 in Indian Universities (2025)" },
-  { name: "Nature Index", desc: "Ranked one among 18 Indian Universities (2025)" },
-  { name: "Green Metric", desc: "Ranked one among 3 Indian Universities (2024)" }
-];
+import { useTranslation } from "react-i18next";
 
 export const CollaboratorsSection = () => {
+  const { t } = useTranslation();
+  
+  const accreditations: any[] = t('collaborators.accreditations', { returnObjects: true }) as any;
+  const rankings: any[] = t('collaborators.rankings', { returnObjects: true }) as any;
+
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.15,
@@ -43,7 +27,7 @@ export const CollaboratorsSection = () => {
           className="text-center max-w-3xl mx-auto mb-20"
         >
           <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-8 uppercase tracking-wide">
-            AICTE VAANI <span className="text-emerald-600">Sponsored</span>
+            AICTE VAANI <span className="text-emerald-600">{t('collaborators.aicteSponsored')}</span>
           </h2>
           <div className="flex justify-center">
             <div className="bg-white border-2 border-emerald-100 shadow-xl shadow-emerald-900/5 rounded-3xl p-6 md:p-8 hover:scale-105 transition-transform duration-300">
@@ -67,10 +51,10 @@ export const CollaboratorsSection = () => {
           className="text-center max-w-3xl mx-auto mb-16"
         >
           <p className="text-xs uppercase tracking-[0.3em] text-slate-500 mb-2">
-            Supported By
+            {t('collaborators.supportedBy')}
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-            Institutional <span className="text-emerald-600">Accreditations</span>
+            {t('collaborators.accreditationsTitle')} <span className="text-emerald-600">{t('collaborators.accreditationsHighlight')}</span>
           </h2>
         </motion.div>
 
@@ -109,7 +93,7 @@ export const CollaboratorsSection = () => {
           className="text-center max-w-3xl mx-auto mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-            University <span className="text-emerald-600">Rankings</span>
+            {t('collaborators.rankingsTitle')} <span className="text-emerald-600">{t('collaborators.rankingsHighlight')}</span>
           </h2>
         </motion.div>
 

@@ -2,8 +2,10 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Mail, Phone, MapPin, Sparkles } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -20,16 +22,15 @@ const Contact = () => {
         >
           <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-50 text-emerald-600 text-sm font-semibold mb-4 border border-emerald-100">
             <Sparkles className="w-3.5 h-3.5" />
-            Contact
+            {t('contact.badge')}
           </span>
 
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-            Get in Touch
+            {t('contact.title')}
           </h2>
 
           <p className="text-slate-600 text-sm sm:text-base">
-            Reach out to the NCTAIDS'26 organizing committee for any
-            conference-related queries.
+            {t('contact.description')}
           </p>
         </motion.div>
 
@@ -48,7 +49,7 @@ const Contact = () => {
               </div>
               <div>
                 <p className="text-sm font-semibold text-slate-700">
-                  Email
+                  {t('contact.emailLabel')}
                 </p>
                 <p className="text-slate-900 font-medium">
                   nctaids.2026@gmail.com
@@ -63,10 +64,10 @@ const Contact = () => {
               </div>
               <div>
                 <p className="text-sm font-semibold text-slate-700">
-                  Contact
+                  {t('contact.contactLabel')}
                 </p>
                 <p className="text-slate-900 font-medium">
-                  Conference Secretary – +91 80561 25082
+                  {t('contact.phone')}
                 </p>
               </div>
             </div>
@@ -78,11 +79,11 @@ const Contact = () => {
               </div>
               <div>
                 <p className="text-sm font-semibold text-slate-700">
-                  Location
+                  {t('contact.locationLabel')}
                 </p>
                 <p className="text-slate-900 font-medium leading-relaxed">
-                  SRM Institute of Science & Technology <br />
-                  Vadapalani Campus, Chennai – 600026
+                  {t('contact.address1')} <br />
+                  {t('contact.address2')}
                 </p>
               </div>
             </div>
@@ -99,7 +100,7 @@ const Contact = () => {
             <div className="absolute top-4 left-4 z-10 px-3 py-1.5 rounded-lg bg-white/90 backdrop-blur-sm border border-slate-100 shadow-sm">
               <span className="text-xs font-semibold text-slate-700 flex items-center gap-1.5">
                 <MapPin className="w-3 h-3 text-emerald-500" />
-                SRM IST, Vadapalani
+                {t('contact.mapLabel')}
               </span>
             </div>
             <iframe

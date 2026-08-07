@@ -2,9 +2,11 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Calendar, MapPin, ArrowRight, Sparkles, Clock } from "lucide-react";
 import { useUser, useClerk } from "@clerk/clerk-react";
+import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 
 export const HeroSection = () => {
+  const { t } = useTranslation();
   const isClerkEnabled = !!import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
   
   let isSignedIn = false;
@@ -122,7 +124,7 @@ export const HeroSection = () => {
         >
           <Sparkles className="w-3.5 h-3.5 text-emerald-400" />
           <span className="text-white/90 text-xs sm:text-sm font-medium">
-            National Level Conference
+            {t('hero.badge')}
           </span>
         </motion.div>
 
@@ -132,7 +134,7 @@ export const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-[10px] sm:text-sm tracking-[0.18em] uppercase text-white/60 mb-3"
         >
-          SRM Institute of Science and Technology · Vadapalani Campus · Chennai - 600026
+          {t('hero.location')}
         </motion.p>
 
 
@@ -142,7 +144,7 @@ export const HeroSection = () => {
           transition={{ duration: 0.7, delay: 0.3 }}
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-2 leading-tight"
         >
-          NCTAIDS <span className="bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-teal-300">2026</span>
+          {t('hero.titlePrefix')} <span className="bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-teal-300">{t('hero.titleSuffix')}</span>
         </motion.h1>
 
         <motion.h2
@@ -151,7 +153,7 @@ export const HeroSection = () => {
           transition={{ duration: 0.7, delay: 0.4 }}
           className="text-xl sm:text-2xl md:text-3xl font-bold text-emerald-400 mb-4 leading-tight"
         >
-          தேசிய தமிழ் செயற்கை நுண்ணறிவு மற்றும் தரவு அறிவியல் கருத்தரங்கு
+          {t('hero.subtitle')}
         </motion.h2>
 
         <motion.p
@@ -160,13 +162,13 @@ export const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.5 }}
           className="text-sm sm:text-base md:text-lg lg:text-xl text-white/85 mb-6 max-w-4xl mx-auto"
         >
-          National Level Conference on{" "}
+          {t('hero.descriptionPrefix')}
           <span className="text-emerald-400 font-semibold">
-            TAMIL AI
-          </span>{" "}
-          &{" "}
+            {t('hero.descriptionHighlight1')}
+          </span>
+          {t('hero.descriptionAnd')}
           <span className="text-emerald-400 font-semibold">
-            DATA SCIENCE
+            {t('hero.descriptionHighlight2')}
           </span>
         </motion.p>
 
@@ -177,9 +179,9 @@ export const HeroSection = () => {
           className="mb-8 max-w-4xl mx-auto"
         >
           <p className="text-xs sm:text-sm md:text-base text-white/80">
-            Organised by the{" "}
+            {t('hero.organisedBy')}
             <span className="text-emerald-400 font-semibold">
-              Department of Computer Science & Engineering
+              {t('hero.department')}
             </span>
           </p>
         </motion.div>
@@ -193,14 +195,14 @@ export const HeroSection = () => {
         >
           <div className="flex items-center gap-2">
             <Calendar className="w-5 h-5 text-emerald-400" />
-            <span className="font-medium">17th – 18th September 2026</span>
+            <span className="font-medium">{t('hero.date')}</span>
           </div>
 
           <div className="hidden sm:block w-1.5 h-1.5 rounded-full bg-emerald-400" />
 
           <div className="flex items-center gap-2">
             <Clock className="w-5 h-5 text-emerald-400" />
-            <span className="font-medium">9:00 AM TO 3:30 PM</span>
+            <span className="font-medium">{t('hero.time')}</span>
           </div>
         </motion.div>
 
@@ -227,7 +229,7 @@ export const HeroSection = () => {
                     </span>
                   </div>
                   <div className="text-[9px] sm:text-[10px] uppercase tracking-[0.2em] text-white/50 font-medium">
-                    {key}
+                    {t(`hero.countdown.${key}`)}
                   </div>
                 </div>
               </React.Fragment>
@@ -247,7 +249,7 @@ export const HeroSection = () => {
   href="/register"
   className="group relative flex items-center gap-2 px-7 sm:px-9 py-3.5 text-base sm:text-lg font-semibold rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-500 text-white hover:from-emerald-500 hover:to-emerald-400 hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg shadow-emerald-900/30 animate-pulse-glow"
 >
-  Register Now
+  {t('hero.registerBtn')}
   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
 </a>
 
