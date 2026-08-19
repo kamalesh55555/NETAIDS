@@ -9,13 +9,13 @@
   "hero": {
     "badge": "National Level Conference",
     "location": "SRM Institute of Science and Technology · Vadapalani Campus · Chennai - 600026",
-    "titlePrefix": "NCTAIDS",
-    "titleSuffix": "2026",
-    "subtitle": "National Conference on Tamil Artificial Intelligence and Data Science",
-    "descriptionPrefix": "National Level Conference on ",
-    "descriptionHighlight1": "TAMIL AI",
-    "descriptionAnd": " & ",
-    "descriptionHighlight2": "DATA SCIENCE",
+    "titlePrefix": "Preserving Heritage, Powering Innovation",
+    "titleSuffix": "",
+    "subtitle": "Tamil-Welsh Conference on Digital Futures for Minority Languages",
+    "descriptionPrefix": "Tamil-Welsh Conference on ",
+    "descriptionHighlight1": "Digital Futures",
+    "descriptionAnd": " for ",
+    "descriptionHighlight2": "Minority Languages",
     "organisedBy": "Organised by the ",
     "department": "Department of Computer Science & Engineering",
     "date": "17th – 18th September 2026",
@@ -34,7 +34,7 @@
     "title2": "DATA SCIENCE",
     "desc1_part1": "The National Level Conference on TAMIL AI & DATA SCIENCE ",
     "desc1_part2": " provides a premier global forum for researchers, academicians, and industry experts to present and exchange innovative ideas shaping intelligent and digitally enabled systems.",
-    "desc2_part1": "NCTAIDS'26 focuses on cutting-edge advancements in ",
+    "desc2_part1": "The Tamil-Welsh Conference focuses on cutting-edge advancements in ",
     "desc2_part2": " that are transforming industries and society.",
     "techList": "Artificial Intelligence, Data Analytics, Automation, Internet of Things, Cloud Computing, Cybersecurity, and emerging digital technologies ",
     "feature1": "Interdisciplinary Research",
@@ -166,7 +166,7 @@
   "contact": {
     "badge": "Contact",
     "title": "Get in Touch",
-    "description": "Reach out to the NCTAIDS'26 organizing committee for any conference-related queries.",
+    "description": "Reach out to the Tamil-Welsh Conference organizing committee for any conference-related queries.",
     "emailLabel": "Email",
     "contactLabel": "Contact",
     "phone": "Conference Secretary – +91 80561 25082",
@@ -176,8 +176,8 @@
     "mapLabel": "SRM IST, Vadapalani"
   },
   "footer": {
-    "title": "NCTAIDS'26",
-    "description": "National Level Conference on TAMIL AI & DATA SCIENCE (NCTAIDS'26), organized by the Department of Computer Science & Engineering, SRM Institute of Science and Technology.",
+    "title": "Preserving Heritage, Powering Innovation",
+    "description": "Tamil-Welsh Conference on Digital Futures for Minority Languages, organized by the Department of Computer Science & Engineering, SRM Institute of Science and Technology.",
     "dateText": "17th & 18th September 2026 · Hybrid Mode",
     "quickLinks": "Quick Links",
     "contactCoordinators": "Contact Co-ordinators",
@@ -186,6 +186,6 @@
     "addressLine3": "Vadapalani Campus, Chennai – 600026",
     "coordinator1": "Dr. G. Paavai Anand",
     "coordinator2": "Ms. S. Niveditha",
-    "copyright": "© 2026 NCTAIDS'26 · Department of Computer Science and Engineering, SRM IST Vadapalani."
+    "copyright": "© 2026 Tamil-Welsh Conference · Department of Computer Science and Engineering, SRM IST Vadapalani."
   }
 }

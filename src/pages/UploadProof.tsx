@@ -200,7 +200,7 @@ export default function UploadProof() {
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-accent" />
-                    Reviewed by NCTAIDS finance team
+                    Reviewed by Conference finance team
                   </div>
                 </div>
               </div>

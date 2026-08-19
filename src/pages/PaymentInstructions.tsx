@@ -164,7 +164,7 @@ export default function PaymentInstructions() {
                   Payment Reference
                 </p>
                 <p className="font-mono text-white/80 break-all">
-                  NCTAIDS2026_{registration.userId}
+                  CONFERENCE2026_{registration.userId}
                 </p>
                 <p className="text-xs text-white/60 mt-3">
                   Mandatory. Add this reference in the payment remarks.
@@ -184,7 +184,7 @@ export default function PaymentInstructions() {
                 <div className="flex items-start gap-2 text-xs text-white/50">
                   <ShieldCheck className="w-4 h-4 text-accent mt-0.5" />
                   <p>
-                    Payments are securely verified by the NCTAIDS
+                    Payments are securely verified by the Conference
                     organizing committee before confirmation.
                   </p>
                 </div>

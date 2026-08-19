@@ -149,15 +149,12 @@ export const Navbar = () => {
               <option value="cy" className="text-slate-800">Welsh</option>
             </select>
 
-            {/* AICTE VAANI Top Right Logo */}
-            <div className="bg-white p-1 rounded-md shadow-sm border border-slate-100 flex items-center justify-center">
+            {/* CCRC Sponsor Top Right Logo */}
+            <div className="flex items-center justify-center overflow-hidden rounded-md">
               <img 
-                src="/aicte-logo.jpeg" 
-                alt="AICTE VAANI" 
+                src="/sponsor-logo.jpeg" 
+                alt="CCRC Creative Computing Research Centre" 
                 className="h-10 w-auto object-contain"
-                onError={(e) => {
-                  (e.target as HTMLImageElement).src = "https://upload.wikimedia.org/wikipedia/en/e/eb/All_India_Council_for_Technical_Education_logo.png";
-                }}
               />
             </div>
 

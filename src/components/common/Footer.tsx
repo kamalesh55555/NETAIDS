@@ -29,10 +29,10 @@ export const Footer = () => {
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3 mb-14">
           
           <div className="space-y-4">
-            <h3 className="text-xl font-bold tracking-wide">NCTAIDS'26</h3>
+            <h3 className="text-xl font-bold tracking-wide">Tamil-Welsh Conference</h3>
 
             <p className="text-white/70 text-sm leading-relaxed">
-              National Level Conference on TAMIL AI & DATA SCIENCE (NCTAIDS'26), organized by the Department of Computer
+              Tamil-Welsh Conference on digital futures for minority Languages, organized by the Department of Computer
               Science & Engineering, SRM Institute of Science and Technology.
             </p>
 
@@ -103,7 +103,7 @@ export const Footer = () => {
         <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-6">
 
           <p className="text-white/50 text-sm text-center md:text-left">
-            © 2026 NCTAIDS'26 · Department of Computer Science and Engineering, SRM IST Vadapalani.
+            © 2026 Tamil-Welsh Conference · Department of Computer Science and Engineering, SRM IST Vadapalani.
           </p>
 
           <button

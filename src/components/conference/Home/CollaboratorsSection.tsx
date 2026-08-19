@@ -19,7 +19,7 @@ export const CollaboratorsSection = () => {
     <section id="college-info" className="py-20 bg-slate-50">
       <div className="container-conference" ref={ref}>
         
-        {/* AICTE VAANI Sponsored */}
+        {/* CCRC Sponsored */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -27,17 +27,14 @@ export const CollaboratorsSection = () => {
           className="text-center max-w-3xl mx-auto mb-20"
         >
           <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-8 uppercase tracking-wide">
-            AICTE VAANI <span className="text-emerald-600">{t('collaborators.aicteSponsored')}</span>
+            CCRC <span className="text-emerald-600">{t('collaborators.aicteSponsored')}</span>
           </h2>
           <div className="flex justify-center">
-            <div className="bg-white border-2 border-emerald-100 shadow-xl shadow-emerald-900/5 rounded-3xl p-6 md:p-8 hover:scale-105 transition-transform duration-300">
+            <div className="hover:scale-105 transition-transform duration-300 rounded-3xl overflow-hidden shadow-2xl">
               <img 
-                src="/aicte-logo.jpeg" 
-                alt="AICTE VAANI Sponsored Logo" 
+                src="/sponsor-logo.jpeg" 
+                alt="CCRC Creative Computing Research Centre Logo" 
                 className="h-32 md:h-40 object-contain"
-                onError={(e) => {
-                  (e.target as HTMLImageElement).src = "https://upload.wikimedia.org/wikipedia/en/e/eb/All_India_Council_for_Technical_Education_logo.png";
-                }}
               />
             </div>
           </div>

@@ -66,7 +66,7 @@ export const AboutSection = () => {
 
             <p className="text-slate-600 leading-relaxed mb-4 text-sm sm:text-base">
               {t('about.desc1_part1')}
-              <strong>(NCTAIDS'26)</strong>
+              <strong>(Tamil-Welsh Conference)</strong>
               {t('about.desc1_part2')}
             </p>
 
@@ -117,7 +117,7 @@ export const AboutSection = () => {
             >
               <img
                 src="/main_poster.jpg"
-                alt="NCTAIDS 2026 Poster"
+                alt="Tamil-Welsh Conference 2026 Poster"
                 className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-[1.02]"
               />
 

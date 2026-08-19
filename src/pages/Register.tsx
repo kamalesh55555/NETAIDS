@@ -88,7 +88,7 @@ export default function Register() {
             Conference Registration
           </h1>
           <p className="mt-3 text-white/55 text-sm tracking-wide">
-            NCTAIDS 2026 · SRM Institute of Science & Technology
+            Tamil-Welsh Conference 2026 · SRM Institute of Science & Technology
           </p>
         </header>
 
@@ -189,7 +189,7 @@ export default function Register() {
                   Registration Summary
                 </p>
                 <p className="text-lg font-medium mt-1">
-                  NCTAIDS 2026
+                  Tamil-Welsh Conference 2026
                 </p>
               </div>
 

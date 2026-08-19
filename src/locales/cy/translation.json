@@ -9,13 +9,13 @@
   "hero": {
     "badge": "Cynhadledd Genedlaethol",
     "location": "Sefydliad Gwyddoniaeth a Thechnoleg SRM · Campws Vadapalani · Chennai - 600026",
-    "titlePrefix": "NCTAIDS",
-    "titleSuffix": "2026",
-    "subtitle": "Cynhadledd Genedlaethol ar AI a Gwyddor Data Tamil",
-    "descriptionPrefix": "Cynhadledd Genedlaethol ar ",
-    "descriptionHighlight1": "DEALLUSRWYDD ARTIFFISIAL TAMIL",
-    "descriptionAnd": " a ",
-    "descriptionHighlight2": "GWYDDOR DATA",
+    "titlePrefix": "Cadw etifeddiaeth trwy arloesedd",
+    "titleSuffix": "",
+    "subtitle": "Cynhadledd Cymraeg- Tamileg ar gyfer dyfodol digidol ieithoedd lleiafrifol",
+    "descriptionPrefix": "Cynhadledd Cymraeg- Tamileg ar gyfer ",
+    "descriptionHighlight1": "dyfodol digidol",
+    "descriptionAnd": " ",
+    "descriptionHighlight2": "ieithoedd lleiafrifol",
     "organisedBy": "Trefnwyd gan ",
     "department": "Adran Gwyddoniaeth Cyfrifiadurol a Pheirianneg",
     "date": "17fed – 18fed Medi 2026",
@@ -34,7 +34,7 @@
     "title2": "GWYDDOR DATA",
     "desc1_part1": "Mae'r Gynhadledd Genedlaethol ar AI a Gwyddor Data Tamil ",
     "desc1_part2": " yn darparu fforwm byd-eang o'r radd flaenaf i ymchwilwyr, academyddion ac arbenigwyr diwydiant gyflwyno a chyfnewid syniadau arloesol sy'n llunio systemau deallus ac wedi'u galluogi'n ddigidol.",
-    "desc2_part1": "Mae NCTAIDS'26 yn canolbwyntio ar ddatblygiadau arloesol mewn ",
+    "desc2_part1": "Mae'r Gynhadledd Tamil-Cymraeg yn canolbwyntio ar ddatblygiadau arloesol mewn ",
     "desc2_part2": " sy'n trawsnewid diwydiannau a chymdeithas.",
     "techList": "Deallusrwydd Artiffisial, Dadansoddeg Data, Awtomatiaeth, Rhyngrwyd Pethau, Cyfrifiadura Cwmwl, Seiberddiogelwch, a thechnolegau digidol sy'n dod i'r amlwg ",
     "feature1": "Ymchwil Rhyngddisgyblaethol",
@@ -166,7 +166,7 @@
   "contact": {
     "badge": "Cyswllt",
     "title": "Cysylltwch â Ni",
-    "description": "Cysylltwch â phwyllgor trefnu NCTAIDS'26 am unrhyw ymholiadau sy'n ymwneud â'r gynhadledd.",
+    "description": "Cysylltwch â phwyllgor trefnu'r Gynhadledd Tamil-Cymraeg am unrhyw ymholiadau sy'n ymwneud â'r gynhadledd.",
     "emailLabel": "E-bost",
     "contactLabel": "Cyswllt",
     "phone": "Ysgrifennydd y Gynhadledd - +91 80561 25082",
@@ -176,16 +176,16 @@
     "mapLabel": "SRM IST, Vadapalani"
   },
   "footer": {
-    "title": "NCTAIDS'26",
-    "description": "Cynhadledd Genedlaethol ar AI a GWYDDOR DATA TAMIL (NCTAIDS'26), a drefnwyd gan yr Adran Cyfrifiadureg a Pheirianneg, Sefydliad Gwyddoniaeth a Thechnoleg SRM.",
+    "title": "Cadw etifeddiaeth trwy arloesedd",
+    "description": "Cynhadledd Cymraeg- Tamileg ar gyfer dyfodol digidol ieithoedd lleiafrifol, a drefnwyd gan yr Adran Cyfrifiadureg a Pheirianneg, Sefydliad Gwyddoniaeth a Thechnoleg SRM.",
     "dateText": "17fed a 18fed Medi 2026 · Modd Hybrid",
     "quickLinks": "Dolenni Cyflym",
     "contactCoordinators": "Cysylltu â Chydlynwyr",
-    "addressLine1": "Adran Cyfrifiadureg a Pheirianneg",
+    "addressLine1": "Adran Gwyddoniaeth Cyfrifiadurol a Pheirianneg",
     "addressLine2": "Sefydliad Gwyddoniaeth a Thechnoleg SRM",
     "addressLine3": "Campws Vadapalani, Chennai - 600026",
     "coordinator1": "Dr. G. Paavai Anand",
     "coordinator2": "Ms. S. Niveditha",
-    "copyright": "© 2026 NCTAIDS'26 · Adran Cyfrifiadureg a Pheirianneg, SRM IST Vadapalani."
+    "copyright": "© 2026 Cynhadledd Tamil-Cymraeg · Adran Cyfrifiadureg a Pheirianneg, SRM IST Vadapalani."
   }
 }

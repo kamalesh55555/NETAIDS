@@ -57,7 +57,7 @@ export default function Dashboard() {
             Welcome back, {user?.firstName}
           </h1>
           <p className="text-white/60 mt-2">
-            NCTAIDS 2026 · Your Personal Conference Command Center
+            Tamil-Welsh Conference 2026 · Your Personal Conference Command Center
           </p>
 
           {data && (
@@ -80,7 +80,7 @@ export default function Dashboard() {
         {data && (
           <>
             <section>
-              <h2 className="text-xl font-medium mb-6">Your NCTAIDS Journey</h2>
+              <h2 className="text-xl font-medium mb-6">Your Conference Journey</h2>
               <div className="grid md:grid-cols-4 gap-6">
                 <JourneyStep done icon={<FileText />} title="Registered" />
                 <JourneyStep done={data.paymentStatus === "paid"} icon={<CreditCard />} title="Payment" />
