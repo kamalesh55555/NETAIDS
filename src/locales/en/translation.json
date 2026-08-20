@@ -7,7 +7,7 @@
     "contact": "Contact"
   },
   "hero": {
-    "badge": "National Level Conference",
+    "badge": "Conference",
     "location": "SRM Institute of Science and Technology · Vadapalani Campus · Chennai - 600026",
     "titlePrefix": "Preserving Heritage, Powering Innovation",
     "titleSuffix": "",
@@ -26,21 +26,38 @@
       "minutes": "MINUTES",
       "seconds": "SECONDS"
     },
-    "registerBtn": "Register Now"
+    "registerBtn": "Register Now",
+    "motto": "Two Languages. One Digital Future."
   },
   "about": {
     "badge": "About the Conference",
-    "title1": "TAMIL AI & ",
-    "title2": "DATA SCIENCE",
-    "desc1_part1": "The National Level Conference on TAMIL AI & DATA SCIENCE ",
-    "desc1_part2": " provides a premier global forum for researchers, academicians, and industry experts to present and exchange innovative ideas shaping intelligent and digitally enabled systems.",
-    "desc2_part1": "The Tamil-Welsh Conference focuses on cutting-edge advancements in ",
-    "desc2_part2": " that are transforming industries and society.",
-    "techList": "Artificial Intelligence, Data Analytics, Automation, Internet of Things, Cloud Computing, Cybersecurity, and emerging digital technologies ",
-    "feature1": "Interdisciplinary Research",
-    "feature2": "Academia–Industry Interaction",
-    "unlock": "Click to unlock",
-    "hoverZoom": "Hover / Click to zoom"
+    "title": "About the Conference",
+    "desc1": "Preserving Heritage, Powering Innovation: Tamil–Welsh Conference on Digital Futures for Minority Languages is an international platform that brings together researchers, educators, technologists, policymakers, industry leaders, and students to explore how digital technologies can safeguard and strengthen minority languages in the AI era.",
+    "desc2": "The conference celebrates the shared journeys of Tamil, one of the world's oldest living classical languages, and Welsh (Cymraeg), a revitalized minority language with globally recognized bilingual education and language policy initiatives. Though separated by geography and linguistic ancestry, both languages demonstrate how community action, education, and technology can ensure linguistic resilience for future generations.",
+    "visionTitle": "Vision",
+    "visionDesc": "To create a lasting Tamil–Welsh partnership that transforms minority-language research into practical digital solutions for education, governance, culture, and industry.",
+    "whyTitle": "Why Tamil and Welsh?",
+    "whyDesc": "Tamil and Welsh have followed different historical paths but share a common mission: ensuring that language thrives in the digital age. Welsh has expanded bilingual education, community engagement, and digital language standards across universities and public institutions, while Tamil has built a rich ecosystem of computing standards, language resources, and international collaboration through initiatives such as INFITT.",
+    "expectedOutcomesTitle": "Expected Outcomes",
+    "outcomes": [
+      "Joint research collaborations.",
+      "International MoUs between universities.",
+      "Open-source language technology initiatives.",
+      "Student exchange and mobility programs.",
+      "Collaborative grant proposals.",
+      "Annual Tamil–Welsh Digital Futures Network."
+    ],
+    "objectivesTitle": "Conference Objectives",
+    "objectives": [
+      "Advance AI and Language Technology for minority languages.",
+      "Promote collaborative research between Tamil Nadu and Wales.",
+      "Showcase innovations in NLP, Speech Technology, and Digital Humanities.",
+      "Support open datasets, digital archives, and language resources.",
+      "Build international academic and industry partnerships.",
+      "Inspire students and young researchers to contribute to language technology."
+    ],
+    "hoverZoom": "Hover / Click to zoom",
+    "unlock": "Click to unlock"
   },
   "schedule": {
     "titlePrefix": "Conference ",
@@ -155,12 +172,30 @@
       }
     ],
     "rankings": [
-      { "name": "NIRF", "desc": "Ranked 11th University (2025)" },
-      { "name": "QS World University Rankings", "desc": "Ranked one among 54 Indian Universities (2026)" },
-      { "name": "Times Higher Education (THE)", "desc": "Ranked one among 91 Indian Universities (2025)" },
-      { "name": "Shanghai Ranking", "desc": "Ranked 8-9 in Indian Universities (2025)" },
-      { "name": "Nature Index", "desc": "Ranked one among 18 Indian Universities (2025)" },
-      { "name": "Green Metric", "desc": "Ranked one among 3 Indian Universities (2024)" }
+      {
+        "name": "NIRF",
+        "desc": "Ranked 11th University (2025)"
+      },
+      {
+        "name": "QS World University Rankings",
+        "desc": "Ranked one among 54 Indian Universities (2026)"
+      },
+      {
+        "name": "Times Higher Education (THE)",
+        "desc": "Ranked one among 91 Indian Universities (2025)"
+      },
+      {
+        "name": "Shanghai Ranking",
+        "desc": "Ranked 8-9 in Indian Universities (2025)"
+      },
+      {
+        "name": "Nature Index",
+        "desc": "Ranked one among 18 Indian Universities (2025)"
+      },
+      {
+        "name": "Green Metric",
+        "desc": "Ranked one among 3 Indian Universities (2024)"
+      }
     ]
   },
   "contact": {
@@ -187,5 +222,20 @@
     "coordinator1": "Dr. G. Paavai Anand",
     "coordinator2": "Ms. S. Niveditha",
     "copyright": "© 2026 Tamil-Welsh Conference · Department of Computer Science and Engineering, SRM IST Vadapalani."
+  },
+  "tracks": {
+    "title": "Conference Tracks",
+    "track1Title": "AI & Natural Language Processing",
+    "track1Desc": "Large Language Models, Machine Translation, OCR, Text Analytics, and Question Answering for low-resource languages.",
+    "track2Title": "Speech Technologies",
+    "track2Desc": "Automatic Speech Recognition, Text-to-Speech, Speaker Recognition, and Conversational AI.",
+    "track3Title": "Digital Heritage",
+    "track3Desc": "Manuscript Digitization, Cultural Archives, Knowledge Graphs, and Digital Preservation.",
+    "track4Title": "Education & Language Policy",
+    "track4Desc": "Welsh-medium education, Tamil digital learning, curriculum innovation, and language planning.",
+    "track5Title": "Innovation & Entrepreneurship",
+    "track5Desc": "Language-tech startups, accessibility solutions, localization, and industry applications.",
+    "track6Title": "Emerging Technologies",
+    "track6Desc": "Quantum NLP, Multimodal AI, Responsible AI, and future digital ecosystems."
   }
 }

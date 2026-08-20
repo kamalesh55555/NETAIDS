@@ -7,7 +7,7 @@
     "contact": "Cyswllt"
   },
   "hero": {
-    "badge": "Cynhadledd Genedlaethol",
+    "badge": "Cynhadledd",
     "location": "Sefydliad Gwyddoniaeth a Thechnoleg SRM · Campws Vadapalani · Chennai - 600026",
     "titlePrefix": "Cadw etifeddiaeth trwy arloesedd",
     "titleSuffix": "",
@@ -26,21 +26,38 @@
       "minutes": "COFNOD",
       "seconds": "EILIAD"
     },
-    "registerBtn": "Cofrestrwch Nawr"
+    "registerBtn": "Cofrestrwch Nawr",
+    "motto": "Dwy Iaith. Un Dyfodol Digidol."
   },
   "about": {
     "badge": "Am y Gynhadledd",
-    "title1": "DEALLUSRWYDD ARTIFFISIAL TAMIL A ",
-    "title2": "GWYDDOR DATA",
-    "desc1_part1": "Mae'r Gynhadledd Genedlaethol ar AI a Gwyddor Data Tamil ",
-    "desc1_part2": " yn darparu fforwm byd-eang o'r radd flaenaf i ymchwilwyr, academyddion ac arbenigwyr diwydiant gyflwyno a chyfnewid syniadau arloesol sy'n llunio systemau deallus ac wedi'u galluogi'n ddigidol.",
-    "desc2_part1": "Mae'r Gynhadledd Tamil-Cymraeg yn canolbwyntio ar ddatblygiadau arloesol mewn ",
-    "desc2_part2": " sy'n trawsnewid diwydiannau a chymdeithas.",
-    "techList": "Deallusrwydd Artiffisial, Dadansoddeg Data, Awtomatiaeth, Rhyngrwyd Pethau, Cyfrifiadura Cwmwl, Seiberddiogelwch, a thechnolegau digidol sy'n dod i'r amlwg ",
-    "feature1": "Ymchwil Rhyngddisgyblaethol",
-    "feature2": "Rhyngweithio rhwng y Brifysgol a Diwydiant",
-    "unlock": "Cliciwch i ddatgloi",
-    "hoverZoom": "Hofran / Clicio i chwyddo"
+    "title": "Am y Gynhadledd",
+    "desc1": "Mae Cadw Etifeddiaeth, Grymuso Arloesedd: Cynhadledd Cymraeg-Tamileg ar Ddyfodol Digidol ar gyfer Ieithoedd Lleiafrifol yn blatfform rhyngwladol sy'n dod ag ymchwilwyr, addysgwyr, technolegwyr, llunwyr polisi, arweinwyr diwydiant, a myfyrwyr at ei gilydd i archwilio sut y gall technolegau digidol ddiogelu a chryfhau ieithoedd lleiafrifol yn yr oes AI.",
+    "desc2": "Mae'r gynhadledd yn dathlu teithiau a rennir Tamileg, un o ieithoedd clasurol hynaf y byd, a Chymraeg, iaith leiafrifol wedi'i hadfywio sydd â mentrau addysg ddwyieithog a pholisi iaith a gydnabyddir yn fyd-eang. Er eu bod wedi'u gwahanu gan ddaearyddiaeth a llinach ieithyddol, mae'r ddwy iaith yn dangos sut y gall gweithredu cymunedol, addysg a thechnoleg sicrhau gwytnwch ieithyddol i genedlaethau'r dyfodol.",
+    "visionTitle": "Gweledigaeth",
+    "visionDesc": "I greu partneriaeth Tamileg-Cymraeg barhaol sy'n trawsnewid ymchwil i ieithoedd lleiafrifol yn atebion digidol ymarferol ar gyfer addysg, llywodraethu, diwylliant a diwydiant.",
+    "whyTitle": "Pam Tamileg a Chymraeg?",
+    "whyDesc": "Mae Tamileg a Chymraeg wedi dilyn llwybrau hanesyddol gwahanol ond yn rhannu cenhadaeth gyffredin: sicrhau bod iaith yn ffynnu yn yr oes ddigidol. Mae'r Gymraeg wedi ehangu addysg ddwyieithog, ymgysylltu â'r gymuned, a safonau iaith ddigidol ar draws prifysgolion a sefydliadau cyhoeddus, tra bod Tamileg wedi adeiladu ecosystem gyfoethog o safonau cyfrifiadura, adnoddau iaith, a chydweithrediad rhyngwladol trwy fentrau fel INFITT.",
+    "expectedOutcomesTitle": "Canlyniadau a Ddisgwylir",
+    "outcomes": [
+      "Cydweithrediadau ymchwil ar y cyd.",
+      "MoU Rhyngwladol rhwng prifysgolion.",
+      "Mentrau technoleg iaith ffynhonnell agored.",
+      "Rhaglenni cyfnewid myfyrwyr a symudedd.",
+      "Cynigion grant cydweithredol.",
+      "Rhwydwaith Dyfodol Digidol Tamileg-Cymraeg Blynyddol."
+    ],
+    "objectivesTitle": "Amcanion y Gynhadledd",
+    "objectives": [
+      "Hyrwyddo AI a Thechnoleg Iaith ar gyfer ieithoedd lleiafrifol.",
+      "Hybu ymchwil cydweithredol rhwng Tamil Nadu a Chymru.",
+      "Arddangos arloesiadau mewn NLP, Technoleg Lleferydd, a'r Dyniaethau Digidol.",
+      "Cefnogi setiau data agored, archifau digidol, ac adnoddau iaith.",
+      "Adeiladu partneriaethau academaidd a diwydiant rhyngwladol.",
+      "Ysbrydoli myfyrwyr ac ymchwilwyr ifanc i gyfrannu at dechnoleg iaith."
+    ],
+    "hoverZoom": "Hofran / Clicio i chwyddo",
+    "unlock": "Cliciwch i ddatgloi"
   },
   "schedule": {
     "titlePrefix": "Amserlen y ",
@@ -155,12 +172,30 @@
       }
     ],
     "rankings": [
-      { "name": "NIRF", "desc": "Rheng 11eg Prifysgol (2025)" },
-      { "name": "Safleoedd Prifysgolion y Byd QS", "desc": "Rheng un ymhlith 54 o Brifysgolion India (2026)" },
-      { "name": "Addysg Uwch Times (THE)", "desc": "Rheng un ymhlith 91 o Brifysgolion India (2025)" },
-      { "name": "Safle Shanghai", "desc": "Rheng 8-9 ym mhrifysgolion India (2025)" },
-      { "name": "Mynegai Natur", "desc": "Rheng un ymhlith 18 o Brifysgolion India (2025)" },
-      { "name": "Green Metric", "desc": "Rheng un ymhlith 3 o Brifysgolion India (2024)" }
+      {
+        "name": "NIRF",
+        "desc": "Rheng 11eg Prifysgol (2025)"
+      },
+      {
+        "name": "Safleoedd Prifysgolion y Byd QS",
+        "desc": "Rheng un ymhlith 54 o Brifysgolion India (2026)"
+      },
+      {
+        "name": "Addysg Uwch Times (THE)",
+        "desc": "Rheng un ymhlith 91 o Brifysgolion India (2025)"
+      },
+      {
+        "name": "Safle Shanghai",
+        "desc": "Rheng 8-9 ym mhrifysgolion India (2025)"
+      },
+      {
+        "name": "Mynegai Natur",
+        "desc": "Rheng un ymhlith 18 o Brifysgolion India (2025)"
+      },
+      {
+        "name": "Green Metric",
+        "desc": "Rheng un ymhlith 3 o Brifysgolion India (2024)"
+      }
     ]
   },
   "contact": {
@@ -187,5 +222,20 @@
     "coordinator1": "Dr. G. Paavai Anand",
     "coordinator2": "Ms. S. Niveditha",
     "copyright": "© 2026 Cynhadledd Tamil-Cymraeg · Adran Cyfrifiadureg a Pheirianneg, SRM IST Vadapalani."
+  },
+  "tracks": {
+    "title": "Traciau'r Gynhadledd",
+    "track1Title": "AI a Phrosesu Iaith Naturiol (NLP)",
+    "track1Desc": "Modelau Iaith Mawr, Cyfieithu Peirianyddol, OCR, Dadansoddeg Testun, ac Ateb Cwestiynau ar gyfer ieithoedd adnoddau isel.",
+    "track2Title": "Technolegau Lleferydd",
+    "track2Desc": "Adnabod Lleferydd Awtomatig, Testun-i-Leferydd, Adnabod Siaradwr, ac AI Sgyrsiol.",
+    "track3Title": "Treftadaeth Ddigidol",
+    "track3Desc": "Digideiddio Llawysgrifau, Archifau Diwylliannol, Graffiau Gwybodaeth, a Chadwraeth Ddigidol.",
+    "track4Title": "Addysg a Pholisi Iaith",
+    "track4Desc": "Addysg cyfrwng Cymraeg, dysgu digidol Tamileg, arloesi cwricwlwm, a chynllunio iaith.",
+    "track5Title": "Arloesedd ac Entrepreneuriaeth",
+    "track5Desc": "Busnesau technoleg iaith newydd, datrysiadau hygyrchedd, lleoleiddio, a chymwysiadau diwydiant.",
+    "track6Title": "Technolegau sy'n Dod i'r Amlwg",
+    "track6Desc": "Cwantwm NLP, AI Amlfodd, AI Cyfrifol, ac ecosystemau digidol y dyfodol."
   }
 }

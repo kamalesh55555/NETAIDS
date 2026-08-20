@@ -151,7 +151,7 @@ export const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.4 }}
-          className="text-xl sm:text-2xl md:text-3xl font-bold text-emerald-400 mb-4 leading-tight"
+          className="text-xl sm:text-2xl md:text-3xl font-bold text-emerald-400 mb-2 leading-tight"
         >
           {t('hero.subtitle')}
         </motion.h2>
@@ -159,18 +159,13 @@ export const HeroSection = () => {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.5 }}
-          className="text-sm sm:text-base md:text-lg lg:text-xl text-white/85 mb-6 max-w-4xl mx-auto"
+          transition={{ duration: 0.7, delay: 0.5 }}
+          className="text-lg sm:text-xl md:text-2xl font-light text-white/80 mb-6 italic"
         >
-          {t('hero.descriptionPrefix')}
-          <span className="text-emerald-400 font-semibold">
-            {t('hero.descriptionHighlight1')}
-          </span>
-          {t('hero.descriptionAnd')}
-          <span className="text-emerald-400 font-semibold">
-            {t('hero.descriptionHighlight2')}
-          </span>
+          "{t('hero.motto')}"
         </motion.p>
+
+
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -238,21 +233,37 @@ export const HeroSection = () => {
         </motion.div>
 
         
-        {/* CTA Button — Enhanced with pulse glow */}
+        {/* Registration Cost & CTA */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.9 }}
-          className="flex justify-center"
+          className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-10 bg-white/[0.03] border border-white/[0.08] rounded-3xl p-6 sm:p-8 max-w-3xl mx-auto backdrop-blur-sm"
         >
-          <a
-  href="/register"
-  className="group relative flex items-center gap-2 px-7 sm:px-9 py-3.5 text-base sm:text-lg font-semibold rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-500 text-white hover:from-emerald-500 hover:to-emerald-400 hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg shadow-emerald-900/30 animate-pulse-glow"
->
-  {t('hero.registerBtn')}
-  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-</a>
+          <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
+            <span className="text-white/70 text-xs sm:text-sm uppercase tracking-wider mb-2 font-medium">Registration Cost (Per Paper)</span>
+            <div className="flex items-center gap-4">
+              <div className="flex items-baseline gap-1.5">
+                <span className="text-emerald-400 font-bold text-3xl">₹1000</span>
+                <span className="text-sm font-medium text-white/50">India</span>
+              </div>
+              <div className="w-1.5 h-1.5 rounded-full bg-white/20"></div>
+              <div className="flex items-baseline gap-1.5">
+                <span className="text-emerald-400 font-bold text-3xl">£10</span>
+                <span className="text-sm font-medium text-white/50">UK</span>
+              </div>
+            </div>
+          </div>
 
+          <div className="hidden sm:block w-px h-16 bg-white/10"></div>
+          
+          <a
+            href="/register"
+            className="group relative flex items-center justify-center gap-2 px-8 py-4 text-base sm:text-lg font-semibold rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-500 text-white hover:from-emerald-500 hover:to-emerald-400 hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg shadow-emerald-900/30 animate-pulse-glow whitespace-nowrap"
+          >
+            {t('hero.registerBtn')}
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          </a>
         </motion.div>
       </div>
     </section>
