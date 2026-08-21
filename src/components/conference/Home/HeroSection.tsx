@@ -142,25 +142,34 @@ export const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.3 }}
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-2 leading-tight"
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold text-white mb-3 leading-tight tracking-tight"
         >
-          {t('hero.titlePrefix')} <span className="bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-teal-300">{t('hero.titleSuffix')}</span>
+          {t('hero.titlePrefix')}<span className="bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-teal-300">{t('hero.titleSuffix')}</span>
         </motion.h1>
 
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.4 }}
-          className="text-xl sm:text-2xl md:text-3xl font-bold text-emerald-400 mb-2 leading-tight"
+          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-emerald-400 mb-3 leading-tight"
         >
-          {t('hero.subtitle')}
+          {t('hero.theme')}
         </motion.h2>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.45 }}
+          className="text-base sm:text-lg md:text-xl lg:text-2xl font-medium text-white/90 max-w-4xl mx-auto mb-2 leading-relaxed"
+        >
+          {t('hero.subtitle')}
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.5 }}
-          className="text-lg sm:text-xl md:text-2xl font-light text-white/80 mb-6 italic"
+          className="text-sm sm:text-base md:text-lg font-light text-white/75 mb-6 italic"
         >
           "{t('hero.motto')}"
         </motion.p>
@@ -244,12 +253,12 @@ export const HeroSection = () => {
             <span className="text-white/70 text-xs sm:text-sm uppercase tracking-wider mb-2 font-medium">Registration Cost (Per Paper)</span>
             <div className="flex items-center gap-4">
               <div className="flex items-baseline gap-1.5">
-                <span className="text-emerald-400 font-bold text-3xl">₹1000</span>
+                <span className="text-emerald-400 font-bold text-3xl">₹1500</span>
                 <span className="text-sm font-medium text-white/50">India</span>
               </div>
               <div className="w-1.5 h-1.5 rounded-full bg-white/20"></div>
               <div className="flex items-baseline gap-1.5">
-                <span className="text-emerald-400 font-bold text-3xl">£10</span>
+                <span className="text-emerald-400 font-bold text-3xl">£15</span>
                 <span className="text-sm font-medium text-white/50">UK</span>
               </div>
             </div>

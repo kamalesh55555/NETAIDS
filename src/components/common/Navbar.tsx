@@ -9,7 +9,8 @@ import { useTranslation } from "react-i18next";
 const navLinks = [
   { key: "home", href: "#hero" },
   { key: "eventInfo", href: "#about" },
-  { key: "schedule", href: "#schedule" },
+  { key: "resourcePersons", href: "#resource-persons" },
+  { key: "committee", href: "#committee" },
   { key: "collegeInfo", href: "#college-info" },
   { key: "contact", href: "#contact" },
 ];

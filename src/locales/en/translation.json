@@ -2,15 +2,17 @@
   "navbar": {
     "home": "Home",
     "eventInfo": "Event Info",
-    "schedule": "Schedule",
+    "resourcePersons": "Resource Persons",
+    "committee": "Committee",
     "collegeInfo": "College Info",
     "contact": "Contact"
   },
   "hero": {
-    "badge": "Conference",
+    "badge": "Transnational Conference",
     "location": "SRM Institute of Science and Technology · Vadapalani Campus · Chennai - 600026",
-    "titlePrefix": "Preserving Heritage, Powering Innovation",
-    "titleSuffix": "",
+    "titlePrefix": "TWC ",
+    "titleSuffix": "2026",
+    "theme": "Preserving Heritage, Powering Innovation",
     "subtitle": "Tamil-Welsh Conference on Digital Futures for Minority Languages",
     "descriptionPrefix": "Tamil-Welsh Conference on ",
     "descriptionHighlight1": "Digital Futures",
@@ -60,8 +62,8 @@
     "unlock": "Click to unlock"
   },
   "schedule": {
-    "titlePrefix": "Conference ",
-    "titleSuffix": "Schedule",
+    "titlePrefix": "",
+    "titleSuffix": "Resource Persons",
     "subtitle": "Follow the flow of ideas on ",
     "dateHighlight": "17th & 18th September 2026",
     "topic": "Topic:",
@@ -204,7 +206,7 @@
     "description": "Reach out to the Tamil-Welsh Conference organizing committee for any conference-related queries.",
     "emailLabel": "Email",
     "contactLabel": "Contact",
-    "phone": "Conference Secretary – +91 80561 25082",
+    "phone": "Contact us – +91 94444 11410",
     "locationLabel": "Location",
     "address1": "SRM Institute of Science & Technology",
     "address2": "Vadapalani Campus, Chennai – 600026",

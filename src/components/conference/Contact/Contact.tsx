@@ -52,7 +52,7 @@ const Contact = () => {
                   {t('contact.emailLabel')}
                 </p>
                 <p className="text-slate-900 font-medium">
-                  nctaids.2026@gmail.com
+                  disrmbilanguageconference@gmail.com
                 </p>
               </div>
             </div>

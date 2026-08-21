@@ -139,43 +139,24 @@ export const AboutSection = () => {
           </motion.div>
         </div>
 
-        {/* BOTTOM SECTION: Objectives & Outcomes */}
-        <div className="grid md:grid-cols-2 gap-12">
+        {/* BOTTOM SECTION: Objectives */}
+        <div className="max-w-4xl mx-auto">
           {/* Objectives */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
+            initial={{ opacity: 0, y: 30 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.4 }}
+            className="bg-white p-8 rounded-3xl shadow-lg shadow-slate-200/50 border border-slate-100"
           >
             <h3 className="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3">
               <Lightbulb className="w-6 h-6 text-emerald-500" />
               {t('about.objectivesTitle')}
             </h3>
-            <ul className="space-y-4">
+            <ul className="space-y-4 grid sm:grid-cols-2 gap-x-8 gap-y-2">
               {Array.isArray(objectives) && objectives.map((obj, i) => (
                 <li key={i} className="flex items-start gap-3">
                   <div className="w-1.5 h-1.5 rounded-full bg-emerald-400 mt-2.5 shrink-0" />
                   <span className="text-slate-700 leading-relaxed">{obj}</span>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
-
-          {/* Outcomes */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.5 }}
-          >
-            <h3 className="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3">
-              <Users className="w-6 h-6 text-blue-500" />
-              {t('about.expectedOutcomesTitle')}
-            </h3>
-            <ul className="space-y-4">
-              {Array.isArray(outcomes) && outcomes.map((outcome, i) => (
-                <li key={i} className="flex items-start gap-3">
-                  <div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2.5 shrink-0" />
-                  <span className="text-slate-700 leading-relaxed">{outcome}</span>
                 </li>
               ))}
             </ul>
