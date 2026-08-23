@@ -1,7 +1,14 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { Mic2, Users, GraduationCap } from "lucide-react";
+import { Mic2, Users, GraduationCap, Sparkles, Star } from "lucide-react";
 import { useTranslation } from "react-i18next";
+
+const chiefGuest = {
+  name: "Dr. Madhan Karky",
+  designation: "Lyricist, Research Technologist & Founder, Karky Research Foundation (KaReFo)",
+  role: "Chief Guest",
+  type: "keynote",
+};
 
 const tamilResourcePersons = [
   {
@@ -104,6 +111,7 @@ const badgeStyles: Record<string, string> = {
 };
 
 const roleBadgeStyles: Record<string, string> = {
+  "Chief Guest": "bg-amber-100 text-amber-900 border-amber-300 font-bold",
   "Welsh Paper Evaluator": "bg-red-50 text-red-700 border-red-200",
   "Resource Person": "bg-slate-50 text-slate-600 border-slate-200",
   Chair: "bg-purple-50 text-purple-700 border-purple-200",
@@ -134,6 +142,35 @@ export const ScheduleSection = () => {
           <p className="text-slate-500 text-lg md:text-xl">
             Distinguished speakers, researchers, and evaluators guiding the conference
           </p>
+        </motion.div>
+
+        {/* CHIEF GUEST SPOTLIGHT */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.5, delay: 0.05 }}
+          className="mb-16 max-w-2xl mx-auto"
+        >
+          <div className="flex items-center justify-center gap-3 mb-6">
+            <div className="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-600 shadow-sm">
+              <Sparkles className="w-5 h-5" />
+            </div>
+            <h3 className="text-2xl sm:text-3xl font-bold text-slate-900">Chief Guest</h3>
+          </div>
+
+          <div className="bg-gradient-to-br from-amber-50/80 via-white to-orange-50/50 border-2 border-amber-300/90 rounded-2xl p-6 sm:p-8 shadow-xl shadow-amber-500/10 text-center relative overflow-hidden group hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+            <div className="absolute top-0 right-0 w-36 h-36 bg-amber-400/10 rounded-bl-full pointer-events-none group-hover:scale-125 transition-transform duration-500" />
+            <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-amber-100/90 text-amber-800 text-xs font-bold uppercase tracking-wider mb-4 border border-amber-300 shadow-sm">
+              <Star className="w-3.5 h-3.5 text-amber-600 fill-amber-500" />
+              Chief Guest & Keynote
+            </div>
+            <h4 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-2.5 tracking-tight">
+              {chiefGuest.name}
+            </h4>
+            <p className="text-slate-600 text-sm sm:text-base font-medium max-w-lg mx-auto leading-relaxed border-t border-amber-200/60 pt-3 mt-3">
+              {chiefGuest.designation}
+            </p>
+          </div>
         </motion.div>
 
         {/* TAMIL / INDIA RESOURCE PERSONS */}

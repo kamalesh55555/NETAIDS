@@ -78,7 +78,7 @@ const patrons: CommitteeMember[] = [
 
 const convener: CommitteeMember = {
   name: "Dr. Golda Dilip",
-  role: "Professor & Head, DCSE",
+  role: "Professor & Head, CSE Department",
   affiliation: "SRMIST, Vadapalani Campus",
   highlight: true,
 };
@@ -86,17 +86,17 @@ const convener: CommitteeMember = {
 const organizingSecretaries: CommitteeMember[] = [
   {
     name: "Dr. G. Paavai Anand",
-    role: "Assistant Professor, DCSE",
+    role: "Assistant Professor, CSE Department",
     affiliation: "SRMIST, Vadapalani Campus",
   },
   {
     name: "Ms. S. Niveditha",
-    role: "Assistant Professor, DCSE",
+    role: "Assistant Professor, CSE Department",
     affiliation: "SRMIST, Vadapalani Campus",
   },
   {
     name: "Dr. Indhumathy",
-    role: "Assistant Professor, DCSE",
+    role: "Assistant Professor, CSE Department",
     affiliation: "SRMIST, Vadapalani Campus",
   },
 ];

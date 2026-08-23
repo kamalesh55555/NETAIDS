@@ -19,7 +19,7 @@
     "descriptionAnd": " for ",
     "descriptionHighlight2": "Minority Languages",
     "organisedBy": "Organised by the ",
-    "department": "Department of Computer Science & Engineering",
+    "department": "CSE Department",
     "date": "17th – 18th September 2026",
     "time": "9:00 AM TO 3:30 PM",
     "countdown": {
@@ -214,16 +214,16 @@
   },
   "footer": {
     "title": "Preserving Heritage, Powering Innovation",
-    "description": "Tamil-Welsh Conference on Digital Futures for Minority Languages, organized by the Department of Computer Science & Engineering, SRM Institute of Science and Technology.",
+    "description": "Tamil-Welsh Conference on Digital Futures for Minority Languages, organized by the CSE Department, SRM Institute of Science and Technology.",
     "dateText": "17th & 18th September 2026 · Hybrid Mode",
     "quickLinks": "Quick Links",
     "contactCoordinators": "Contact Co-ordinators",
-    "addressLine1": "Department of Computer Science & Engineering",
+    "addressLine1": "CSE Department",
     "addressLine2": "SRM Institute of Science and Technology",
     "addressLine3": "Vadapalani Campus, Chennai – 600026",
     "coordinator1": "Dr. G. Paavai Anand",
     "coordinator2": "Ms. S. Niveditha",
-    "copyright": "© 2026 Tamil-Welsh Conference · Department of Computer Science and Engineering, SRM IST Vadapalani."
+    "copyright": "© 2026 Tamil-Welsh Conference · CSE Department, SRM IST Vadapalani."
   },
   "tracks": {
     "title": "Conference Tracks",

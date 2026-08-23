@@ -33,8 +33,7 @@ export const Footer = () => {
             <h3 className="text-xl font-bold tracking-wide">Tamil-Welsh Conference</h3>
 
             <p className="text-white/70 text-sm leading-relaxed">
-              Tamil-Welsh Conference on digital futures for minority Languages, organized by the Department of Computer
-              Science & Engineering, SRM Institute of Science and Technology.
+              Tamil-Welsh Conference on digital futures for minority Languages, organized by the CSE Department, SRM Institute of Science and Technology.
             </p>
 
             <p className="text-white/60 text-xs">
@@ -74,7 +73,7 @@ export const Footer = () => {
                   <MapPin className="w-3.5 h-3.5 text-emerald-400" />
                 </div>
                 <span className="leading-relaxed">
-                  Department of Computer Science & Engineering<br />
+                  CSE Department<br />
                   SRM Institute of Science and Technology<br />
                   Vadapalani Campus, Chennai – 600026
                 </span>
@@ -104,7 +103,7 @@ export const Footer = () => {
         <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-6">
 
           <p className="text-white/50 text-sm text-center md:text-left">
-            © 2026 Tamil-Welsh Conference · Department of Computer Science and Engineering, SRM IST Vadapalani.
+            © 2026 Tamil-Welsh Conference · CSE Department, SRM IST Vadapalani.
           </p>
 
           <button
