@@ -12,24 +12,31 @@
     "location": "Sefydliad Gwyddoniaeth a Thechnoleg SRM · Campws Vadapalani · Chennai - 600026",
     "titlePrefix": "TWC ",
     "titleSuffix": "2026",
-    "theme": "Cadw etifeddiaeth trwy arloesedd",
-    "subtitle": "Cynhadledd Cymraeg- Tamileg ar gyfer dyfodol digidol ieithoedd lleiafrifol",
-    "descriptionPrefix": "Cynhadledd Cymraeg- Tamileg ar gyfer ",
-    "descriptionHighlight1": "dyfodol digidol",
+    "theme": "Cadw Etifeddiaeth, Grymuso Arloesedd",
+    "subtitle": "Cynhadledd Cymraeg-Tamileg ar Ddyfodol Digidol ar gyfer Ieithoedd Lleiafrifol",
+    "descriptionPrefix": "Cynhadledd Cymraeg-Tamileg ar gyfer ",
+    "descriptionHighlight1": "Dyfodol Digidol",
     "descriptionAnd": " ",
-    "descriptionHighlight2": "ieithoedd lleiafrifol",
-    "organisedBy": "Trefnwyd gan ",
-    "department": "Adran CSE (CSE Department)",
-    "date": "17fed – 18fed Medi 2026",
+    "descriptionHighlight2": "Ieithoedd Lleiafrifol",
+    "organisedBy": "Trefnwyd gan glwb ",
+    "department": "Dylunio ac Arloesi",
+    "deptOfCse": "Adran Gwyddoniaeth Cyfrifiadurol a Pheirianneg",
+    "date": "16eg – 17eg Medi 2026",
     "time": "9:00 YB I 3:30 YH",
+    "mode": "Modd Hybrid",
     "countdown": {
       "days": "DIWRNOD",
       "hours": "AWR",
-      "minutes": "COFNOD",
+      "minutes": "MUNUD",
       "seconds": "EILIAD"
     },
     "registerBtn": "Cofrestrwch Nawr",
-    "motto": "Dwy Iaith. Un Dyfodol Digidol."
+    "motto": "Dwy Iaith. Un Dyfodol Digidol.",
+    "registrationCost": "Cost Cofrestru (Fesul Papur)",
+    "india": "India",
+    "uk": "Y DU",
+    "tamilBtn": "தமிழில் படிக்க கிளிக் செய்க",
+    "welshBtn": "Cliciwch yma am Gymraeg"
   },
   "about": {
     "badge": "Am y Gynhadledd",
@@ -43,7 +50,7 @@
     "expectedOutcomesTitle": "Canlyniadau a Ddisgwylir",
     "outcomes": [
       "Cydweithrediadau ymchwil ar y cyd.",
-      "MoU Rhyngwladol rhwng prifysgolion.",
+      "Memorandwm Cyd-ddealltwriaeth Rhyngwladol rhwng prifysgolion.",
       "Mentrau technoleg iaith ffynhonnell agored.",
       "Rhaglenni cyfnewid myfyrwyr a symudedd.",
       "Cynigion grant cydweithredol.",
@@ -53,33 +60,42 @@
     "objectives": [
       "Hyrwyddo AI a Thechnoleg Iaith ar gyfer ieithoedd lleiafrifol.",
       "Hybu ymchwil cydweithredol rhwng Tamil Nadu a Chymru.",
-      "Arddangos arloesiadau mewn NLP, Technoleg Lleferydd, a'r Dyniaethau Digidol.",
+      "Arddangos arloesiadau mewn Prosesu Iaith Naturiol, Technoleg Lleferydd, a'r Dyniaethau Digidol.",
       "Cefnogi setiau data agored, archifau digidol, ac adnoddau iaith.",
       "Adeiladu partneriaethau academaidd a diwydiant rhyngwladol.",
       "Ysbrydoli myfyrwyr ac ymchwilwyr ifanc i gyfrannu at dechnoleg iaith."
     ],
-    "hoverZoom": "Hofran / Clicio i chwyddo",
+    "hoverZoom": "Hofran / Cliciwch i chwyddo",
     "unlock": "Cliciwch i ddatgloi"
   },
   "schedule": {
-    "titlePrefix": "Amserlen y ",
-    "titleSuffix": "Gynhadledd",
+    "titlePrefix": "",
+    "titleSuffix": "Aelodau'r Pwyllgor Rhaglen",
     "subtitle": "Dilynwch lif syniadau ar ",
-    "dateHighlight": "17fed a 18fed Medi 2026",
+    "dateHighlight": "16eg a 17eg Medi 2026",
     "topic": "Pwnc:",
     "room": "Ystafell:",
     "chair": "Cadeirydd:",
+    "chiefGuest": "Gwestai Nodedig",
+    "chiefGuestKeynote": "Gwestai Nodedig a Phrif Anerchiad",
+    "tamilResourcePersons": "Pobl Adnoddau Tamileg / India",
+    "welshResourcePersons": "Pobl Adnoddau Cymraeg a Gwerthuswyr",
+    "sessionChairs": "Cadeiryddion y Sesiwn",
+    "description": "Siaradwyr, ymchwilwyr a gwerthuswyr nodedig sy'n arwain y gynhadledd",
+    "welshPaperEvaluator": "Gwerthuswr Papurau Cymraeg",
+    "resourcePerson": "Person Adnoddau",
+    "chairRole": "Cadeirydd",
     "day1": {
-      "date": "17fed Medi 2026",
+      "date": "16eg Medi 2026",
       "title": "Amserlen Diwrnod 1",
       "events": [
         {
           "time": "Sesiwn y Bore",
           "title": "Sesiwn I",
-          "speaker": "Dr. Raj Ramachandran, Uwch Ddarlithydd mewn Technolegau, Ysgol Technolegau Caerdydd, Caerdydd",
+          "speaker": "Dr. Raj Ramachandran, Uwch Ddarlithydd mewn Technolegau, Ysgol Technolegau Caerdydd, Prifysgol Met Caerdydd, Caerdydd",
           "type": "keynote",
           "room": "Prif Awditoriwm, Campws Vadapalani",
-          "topics": "Dyfodol Rhwydweithiau Niwral yn Tamil NLP",
+          "topics": "Dyfodol Rhwydweithiau Niwral mewn Prosesu Iaith Naturiol Tamileg",
           "chair": "Dr. S. Niveditha"
         },
         {
@@ -97,13 +113,13 @@
           "speaker": "Mr. Venkatarangan Thirumalai, Sylfaenydd Catalyst, Vishwak Solutions",
           "type": "session",
           "room": "Prif Awditoriwm",
-          "topics": "Ecosystem Cwmnïau Newydd mewn Technoleg Tamil",
+          "topics": "Ecosystem Cwmnïau Newydd mewn Technoleg Tamileg",
           "chair": "Dr. G. Paavai Anand"
         },
         {
           "time": "Sesiwn y Prynhawn",
           "title": "Sesiwn IV",
-          "speaker": "Dr. S. Chitrakala, Athro, DCSE a Chyfarwyddwr Canolfan Technolegau Ymgolli, Prifysgol Anna, Chennai",
+          "speaker": "Dr. S. Chitrakala, Athro, Adran Gwyddoniaeth Cyfrifiadurol a Pheirianneg a Chyfarwyddwr Canolfan Technolegau Ymgolli, Prifysgol Anna, Chennai",
           "type": "keynote",
           "room": "Modd Rhithwir / Ystafell Seminar 2",
           "topics": "Technolegau Ymgolli ac AI",
@@ -112,7 +128,7 @@
       ]
     },
     "day2": {
-      "date": "18fed Medi 2026",
+      "date": "17eg Medi 2026",
       "title": "Amserlen Diwrnod 2",
       "events": [
         {
@@ -130,7 +146,7 @@
           "speaker": "Dr. Subalalitha C.N, Sylfaenydd y cwmni cychwynnol AI FirstLanguage Technologies",
           "type": "keynote",
           "room": "Ystafell Seminar 1",
-          "topics": "Adeiladu LLMs ar gyfer Ieithoedd Indiaidd",
+          "topics": "Adeiladu Modelau Iaith Mawr ar gyfer Ieithoedd Indiaidd",
           "chair": "Dr. G. Paavai Anand"
         },
         {
@@ -145,7 +161,7 @@
         {
           "time": "Sesiwn y Prynhawn",
           "title": "Sesiwn VIII",
-          "speaker": "Dr. Na.e Kodaikkaavirinaadan U, Arweinydd Technoleg Tech Mahindra, Chennai",
+          "speaker": "Dr. Na.e Kodaikkaavirinaadan U, Arweinydd Technoleg, Tech Mahindra, Chennai",
           "type": "keynote",
           "room": "Ystafell Seminar 2",
           "topics": "Graddio Piblinellau Gwyddor Data wrth Gynhyrchu",
@@ -157,7 +173,7 @@
   "collaborators": {
     "aicteSponsored": "Noddir gan",
     "supportedBy": "Cefnogir Gan",
-    "accreditationsTitle": "Aredygau ",
+    "accreditationsTitle": "Achrediadau ",
     "accreditationsHighlight": "Sefydliadol",
     "rankingsTitle": "Safleoedd ",
     "rankingsHighlight": "Prifysgol",
@@ -168,67 +184,69 @@
         "logo": "/naac.png"
       },
       {
-        "name": "Cyngor Arloesedd Sefydliad",
-        "subtitle": "Menter y Weinyddiaeth AD",
+        "name": "Cyngor Arloesedd y Sefydliad",
+        "subtitle": "Menter y Weinyddiaeth Adnoddau Dynol",
         "logo": "/iic.png"
       }
     ],
     "rankings": [
       {
         "name": "NIRF",
-        "desc": "Rheng 11eg Prifysgol (2025)"
+        "desc": "Safle 11eg Prifysgol (2025)"
       },
       {
         "name": "Safleoedd Prifysgolion y Byd QS",
-        "desc": "Rheng un ymhlith 54 o Brifysgolion India (2026)"
+        "desc": "Safle ymhlith 54 o Brifysgolion India (2026)"
       },
       {
         "name": "Addysg Uwch Times (THE)",
-        "desc": "Rheng un ymhlith 91 o Brifysgolion India (2025)"
+        "desc": "Safle ymhlith 91 o Brifysgolion India (2025)"
       },
       {
         "name": "Safle Shanghai",
-        "desc": "Rheng 8-9 ym mhrifysgolion India (2025)"
+        "desc": "Safle 8-9 ym mhrifysgolion India (2025)"
       },
       {
         "name": "Mynegai Natur",
-        "desc": "Rheng un ymhlith 18 o Brifysgolion India (2025)"
+        "desc": "Safle ymhlith 18 o Brifysgolion India (2025)"
       },
       {
         "name": "Green Metric",
-        "desc": "Rheng un ymhlith 3 o Brifysgolion India (2024)"
+        "desc": "Safle ymhlith 3 o Brifysgolion India (2024)"
       }
     ]
   },
   "contact": {
     "badge": "Cyswllt",
     "title": "Cysylltwch â Ni",
-    "description": "Cysylltwch â phwyllgor trefnu'r Gynhadledd Tamil-Cymraeg am unrhyw ymholiadau sy'n ymwneud â'r gynhadledd.",
+    "description": "Cysylltwch â phwyllgor trefnu Cynhadledd Cymraeg-Tamileg am unrhyw ymholiadau sy'n ymwneud â'r gynhadledd.",
     "emailLabel": "E-bost",
     "contactLabel": "Cyswllt",
-    "phone": "Cysylltwch â ni – +91 94444 11410",
-    "locationLabel": "Lleoliad",
+    "phone1Name": "Kamalesh Kumar K",
+    "phone1Number": "9444411410",
+    "phone2Name": "Ramya Bharathy",
+    "phone2Number": "80150 60079",
+    "locationLabel": "Cyfeiriad",
     "address1": "Sefydliad Gwyddoniaeth a Thechnoleg SRM",
     "address2": "Campws Vadapalani, Chennai - 600026",
     "mapLabel": "SRM IST, Vadapalani"
   },
   "footer": {
-    "title": "Cadw etifeddiaeth trwy arloesedd",
-    "description": "Cynhadledd Cymraeg- Tamileg ar gyfer dyfodol digidol ieithoedd lleiafrifol, a drefnwyd gan yr Adran Cyfrifiadureg a Pheirianneg, Sefydliad Gwyddoniaeth a Thechnoleg SRM.",
-    "dateText": "17fed a 18fed Medi 2026 · Modd Hybrid",
+    "title": "Cynhadledd Cymraeg-Tamileg",
+    "description": "Cynhadledd Cymraeg-Tamileg ar Ddyfodol Digidol ar gyfer Ieithoedd Lleiafrifol, a drefnwyd gan y Clwb Dylunio ac Arloesi, Adran Gwyddoniaeth Cyfrifiadurol a Pheirianneg, Sefydliad Gwyddoniaeth a Thechnoleg SRM.",
+    "dateText": "16eg a 17eg Medi 2026 · Modd Hybrid",
     "quickLinks": "Dolenni Cyflym",
     "contactCoordinators": "Cysylltu â Chydlynwyr",
-    "addressLine1": "Adran Gwyddoniaeth Cyfrifiadurol a Pheirianneg",
-    "addressLine2": "Sefydliad Gwyddoniaeth a Thechnoleg SRM",
+    "addressLine1": "Clwb Dylunio ac Arloesi",
+    "addressLine2": "Adran Gwyddoniaeth Cyfrifiadurol a Pheirianneg, SRM IST",
     "addressLine3": "Campws Vadapalani, Chennai - 600026",
     "coordinator1": "Dr. G. Paavai Anand",
-    "coordinator2": "Ms. S. Niveditha",
-    "copyright": "© 2026 Cynhadledd Tamil-Cymraeg · Adran Cyfrifiadureg a Pheirianneg, SRM IST Vadapalani."
+    "copyright": "© 2026 Cynhadledd Cymraeg-Tamileg · Clwb Dylunio ac Arloesi, SRM IST Vadapalani."
   },
   "tracks": {
     "title": "Traciau'r Gynhadledd",
-    "track1Title": "AI a Phrosesu Iaith Naturiol (NLP)",
-    "track1Desc": "Modelau Iaith Mawr, Cyfieithu Peirianyddol, OCR, Dadansoddeg Testun, ac Ateb Cwestiynau ar gyfer ieithoedd adnoddau isel.",
+    "track1Title": "AI a Phrosesu Iaith Naturiol",
+    "track1Desc": "Modelau Iaith Mawr, Cyfieithu Peirianyddol, Adnabod Cymeriadau Optegol, Dadansoddeg Testun, ac Ateb Cwestiynau ar gyfer ieithoedd adnoddau isel.",
     "track2Title": "Technolegau Lleferydd",
     "track2Desc": "Adnabod Lleferydd Awtomatig, Testun-i-Leferydd, Adnabod Siaradwr, ac AI Sgyrsiol.",
     "track3Title": "Treftadaeth Ddigidol",
@@ -238,6 +256,16 @@
     "track5Title": "Arloesedd ac Entrepreneuriaeth",
     "track5Desc": "Busnesau technoleg iaith newydd, datrysiadau hygyrchedd, lleoleiddio, a chymwysiadau diwydiant.",
     "track6Title": "Technolegau sy'n Dod i'r Amlwg",
-    "track6Desc": "Cwantwm NLP, AI Amlfodd, AI Cyfrifol, ac ecosystemau digidol y dyfodol."
+    "track6Desc": "Cwantwm Prosesu Iaith Naturiol, AI Amlfodd, AI Cyfrifol, ac ecosystemau digidol y dyfodol."
+  },
+  "committee": {
+    "badge": "Arweinyddiaeth y Gynhadledd",
+    "title": "Pwyllgor y",
+    "titleHighlight": "Gynhadledd",
+    "description": "Arweinyddiaeth prifysgol nodedig, noddwyr ymgynghorol, a thîm trefnu TWC 2026",
+    "chiefPatrons": "Prif Noddwyr",
+    "patrons": "Noddwyr",
+    "convener": "Cynullydd",
+    "organizingSecretaries": "Ysgrifenyddion Trefnu"
   }
 }

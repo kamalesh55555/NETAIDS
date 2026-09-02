@@ -19,9 +19,11 @@
     "descriptionAnd": " for ",
     "descriptionHighlight2": "Minority Languages",
     "organisedBy": "Organised by the ",
-    "department": "CSE Department",
-    "date": "17th – 18th September 2026",
+    "department": "Design and Innovation Club",
+    "deptOfCse": "Department of Computer Science and Engineering",
+    "date": "16th – 17th September 2026",
     "time": "9:00 AM TO 3:30 PM",
+    "mode": "Hybrid Mode",
     "countdown": {
       "days": "DAYS",
       "hours": "HOURS",
@@ -29,7 +31,12 @@
       "seconds": "SECONDS"
     },
     "registerBtn": "Register Now",
-    "motto": "Two Languages. One Digital Future."
+    "motto": "Two Languages. One Digital Future.",
+    "registrationCost": "Registration Cost (Per Paper)",
+    "india": "India",
+    "uk": "UK",
+    "tamilBtn": "தமிழில் படிக்க கிளிக் செய்க",
+    "welshBtn": "Cliciwch yma am Gymraeg"
   },
   "about": {
     "badge": "About the Conference",
@@ -63,14 +70,23 @@
   },
   "schedule": {
     "titlePrefix": "",
-    "titleSuffix": "Resource Persons",
+    "titleSuffix": "Program Committee Members",
     "subtitle": "Follow the flow of ideas on ",
-    "dateHighlight": "17th & 18th September 2026",
+    "dateHighlight": "16th & 17th September 2026",
     "topic": "Topic:",
     "room": "Room:",
     "chair": "Chair:",
+    "chiefGuest": "Distinguished Guest",
+    "chiefGuestKeynote": "Distinguished Guest & Keynote",
+    "tamilResourcePersons": "Tamil / India Resource Persons",
+    "welshResourcePersons": "Welsh Resource Persons & Evaluators",
+    "sessionChairs": "Session Chairs",
+    "description": "Distinguished speakers, researchers, and evaluators guiding the conference",
+    "welshPaperEvaluator": "Welsh Paper Evaluator",
+    "resourcePerson": "Resource Person",
+    "chairRole": "Chair",
     "day1": {
-      "date": "17th September 2026",
+      "date": "16th September 2026",
       "title": "Day 1 Schedule",
       "events": [
         {
@@ -112,7 +128,7 @@
       ]
     },
     "day2": {
-      "date": "18th September 2026",
+      "date": "17th September 2026",
       "title": "Day 2 Schedule",
       "events": [
         {
@@ -206,24 +222,26 @@
     "description": "Reach out to the Tamil-Welsh Conference organizing committee for any conference-related queries.",
     "emailLabel": "Email",
     "contactLabel": "Contact",
-    "phone": "Contact us – +91 94444 11410",
+    "phone1Name": "Kamalesh Kumar K",
+    "phone1Number": "9444411410",
+    "phone2Name": "Ramya Bharathy",
+    "phone2Number": "80150 60079",
     "locationLabel": "Location",
     "address1": "SRM Institute of Science & Technology",
     "address2": "Vadapalani Campus, Chennai – 600026",
     "mapLabel": "SRM IST, Vadapalani"
   },
   "footer": {
-    "title": "Preserving Heritage, Powering Innovation",
-    "description": "Tamil-Welsh Conference on Digital Futures for Minority Languages, organized by the CSE Department, SRM Institute of Science and Technology.",
-    "dateText": "17th & 18th September 2026 · Hybrid Mode",
+    "title": "Tamil-Welsh Conference",
+    "description": "Tamil-Welsh Conference on Digital Futures for Minority Languages, organized by the Design and Innovation Club, Department of Computer Science and Engineering, SRM Institute of Science and Technology.",
+    "dateText": "16th & 17th September 2026 · Hybrid Mode",
     "quickLinks": "Quick Links",
     "contactCoordinators": "Contact Co-ordinators",
-    "addressLine1": "CSE Department",
-    "addressLine2": "SRM Institute of Science and Technology",
+    "addressLine1": "Design and Innovation Club",
+    "addressLine2": "Department of Computer Science and Engineering, SRM IST",
     "addressLine3": "Vadapalani Campus, Chennai – 600026",
     "coordinator1": "Dr. G. Paavai Anand",
-    "coordinator2": "Ms. S. Niveditha",
-    "copyright": "© 2026 Tamil-Welsh Conference · CSE Department, SRM IST Vadapalani."
+    "copyright": "© 2026 Tamil-Welsh Conference · Design and Innovation Club, SRM IST Vadapalani."
   },
   "tracks": {
     "title": "Conference Tracks",
@@ -239,5 +257,15 @@
     "track5Desc": "Language-tech startups, accessibility solutions, localization, and industry applications.",
     "track6Title": "Emerging Technologies",
     "track6Desc": "Quantum NLP, Multimodal AI, Responsible AI, and future digital ecosystems."
+  },
+  "committee": {
+    "badge": "Conference Leadership",
+    "title": "Conference",
+    "titleHighlight": "Committee",
+    "description": "Distinguished university leadership, advisory patrons, and organizing team of TWC 2026",
+    "chiefPatrons": "Chief Patrons",
+    "patrons": "Patrons",
+    "convener": "Convener",
+    "organizingSecretaries": "Organizing Secretaries"
   }
 }

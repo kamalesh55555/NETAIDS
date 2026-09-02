@@ -1,7 +1,7 @@
 // nctaids-main/src/components/conference/Navbar.tsx
 import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Globe } from "lucide-react";
 import { SignedIn, UserButton } from "@clerk/clerk-react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -13,6 +13,12 @@ const navLinks = [
   { key: "committee", href: "#committee" },
   { key: "collegeInfo", href: "#college-info" },
   { key: "contact", href: "#contact" },
+];
+
+const languageOptions = [
+  { code: "en", label: "English", flag: "🇬🇧" },
+  { code: "ta", label: "தமிழ்", flag: "🇮🇳" },
+  { code: "cy", label: "Cymraeg", flag: "🏴" },
 ];
 
 export const Navbar = () => {
@@ -95,7 +101,7 @@ export const Navbar = () => {
       />
       <div className="container-conference px-4 sm:px-6">
         <div className="flex items-center justify-between h-16 sm:h-20 lg:h-24">
-          {/*Logos - srm logo on lefts ide */}
+          {/*Logos - srm logo on left side */}
           <button
             onClick={() => handleNavClick("#home")}
             className="hidden lg:flex items-center"
@@ -134,21 +140,8 @@ export const Navbar = () => {
             ))}
           </div>
 
-          {/*right logo*/}
+          {/*right section*/}
           <div className="hidden lg:flex items-center gap-4">
-            
-            {/* Language Switcher */}
-            <select
-              value={i18n.language}
-              onChange={(e) => i18n.changeLanguage(e.target.value)}
-              className={`text-sm font-medium rounded-md px-2 py-1 outline-none transition-colors border ${
-                isScrolled ? "bg-white text-slate-700 border-slate-200" : "bg-white/10 text-white border-white/20"
-              }`}
-            >
-              <option value="en" className="text-slate-800">English</option>
-              <option value="ta" className="text-slate-800">தமிழ்</option>
-              <option value="cy" className="text-slate-800">Welsh</option>
-            </select>
 
             {/* CCRC Sponsor Top Right Logo */}
             <div className="flex items-center justify-center overflow-hidden rounded-md">
@@ -190,10 +183,10 @@ export const Navbar = () => {
               />
             </button>
 
-            {/*hamburgen menu for mobile*/}
+            {/*hamburger menu for mobile*/}
             <button
               aria-label="Toggle menu"
-              className={`p-2 rounded-lg transition ${
+              className={`p-2.5 rounded-lg transition ${
                 isScrolled
                   ? "text-slate-800 bg-slate-100"
                   : "text-white bg-white/10"
@@ -212,16 +205,45 @@ export const Navbar = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.25, ease: "easeOut" }}
-            className="lg:hidden bg-white/95 backdrop-blur-xl border-t shadow-xl"
+            className="lg:hidden bg-white/95 backdrop-blur-xl border-t shadow-xl max-h-[85vh] overflow-y-auto"
           >
-            <div className="container-conference px-4 py-6 space-y-6">
+            <div className="container-conference px-4 py-6 space-y-5">
               <div className="flex items-center justify-center gap-6 pb-4 border-b">
-                <img src="/logo.png" className="h-8 object-contain" />
+                <img src="/logo.png" className="h-8 object-contain" alt="SRM Logo" />
                 <img
-                  src="/logo_nctaids_main.jpg"
+                  src="/sponsor-logo.jpeg"
                   className="h-8 object-contain"
+                  alt="Sponsor Logo"
                 />
               </div>
+
+              {/* Mobile Language Switcher */}
+              <div className="pb-4 border-b border-slate-100">
+                <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-3 flex items-center gap-1.5">
+                  <Globe className="w-3.5 h-3.5" />
+                  Language / மொழி / Iaith
+                </p>
+                <div className="flex gap-2">
+                  {languageOptions.map((lang) => (
+                    <button
+                      key={lang.code}
+                      onClick={() => {
+                        i18n.changeLanguage(lang.code);
+                      }}
+                      className={`flex-1 px-3 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 ${
+                        i18n.language === lang.code
+                          ? "bg-emerald-500 text-white shadow-md shadow-emerald-500/20"
+                          : "bg-slate-100 text-slate-700 hover:bg-emerald-50 hover:text-emerald-700"
+                      }`}
+                    >
+                      <span className="block text-base mb-0.5">{lang.flag}</span>
+                      <span className="block text-xs">{lang.label}</span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Navigation Links */}
               <div className="space-y-2">
                 {navLinks.map((link) => (
                   <button
@@ -235,6 +257,7 @@ export const Navbar = () => {
                       text-left
                       font-medium
                       transition-all
+                      text-sm
                       ${isActive(link.href)
                         ? "text-emerald-700 bg-emerald-50 border-l-4 border-emerald-500"
                         : "text-slate-700 bg-slate-50 hover:bg-emerald-50 hover:text-emerald-700"

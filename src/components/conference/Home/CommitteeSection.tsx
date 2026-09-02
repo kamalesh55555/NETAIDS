@@ -90,11 +90,6 @@ const organizingSecretaries: CommitteeMember[] = [
     affiliation: "SRMIST, Vadapalani Campus",
   },
   {
-    name: "Ms. S. Niveditha",
-    role: "Assistant Professor, CSE Department",
-    affiliation: "SRMIST, Vadapalani Campus",
-  },
-  {
     name: "Dr. Indhumathy",
     role: "Assistant Professor, CSE Department",
     affiliation: "SRMIST, Vadapalani Campus",
@@ -106,7 +101,7 @@ export const CommitteeSection = () => {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
 
   return (
-    <section id="committee" className="py-24 bg-white relative overflow-hidden">
+    <section id="committee" className="py-16 sm:py-24 bg-white relative overflow-hidden">
       {/* Decorative ambient background glows */}
       <div className="absolute top-1/4 left-0 w-96 h-96 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-teal-500/5 rounded-full blur-3xl pointer-events-none" />
@@ -117,17 +112,17 @@ export const CommitteeSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="text-center max-w-3xl mx-auto mb-20"
+          className="text-center max-w-3xl mx-auto mb-12 sm:mb-20"
         >
           <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-emerald-50 text-emerald-700 text-xs sm:text-sm font-semibold mb-4 border border-emerald-200 shadow-sm">
             <Sparkles className="w-3.5 h-3.5 text-emerald-500" />
-            Conference Leadership
+            {t('committee.badge')}
           </span>
-          <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-5 tracking-tight">
-            Conference <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-500">Committee</span>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 mb-4 sm:mb-5 tracking-tight">
+            {t('committee.title')} <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-500">{t('committee.titleHighlight')}</span>
           </h2>
-          <p className="text-slate-500 text-base sm:text-lg md:text-xl">
-            Distinguished university leadership, advisory patrons, and organizing team of TWC 2026
+          <p className="text-slate-500 text-sm sm:text-base md:text-lg lg:text-xl">
+            {t('committee.description')}
           </p>
         </motion.div>
 
@@ -136,16 +131,16 @@ export const CommitteeSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="mb-16"
+          className="mb-12 sm:mb-16"
         >
-          <div className="flex items-center justify-center gap-3 mb-8">
-            <div className="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-600 shadow-sm">
+          <div className="flex items-center justify-center gap-3 mb-6 sm:mb-8">
+            <div className="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-600 shadow-sm shrink-0">
               <Crown className="w-5 h-5" />
             </div>
-            <h3 className="text-2xl sm:text-3xl font-bold text-slate-900">Chief Patrons</h3>
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-slate-900">{t('committee.chiefPatrons')}</h3>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {chiefPatrons.map((member, i) => (
               <CommitteeCard
                 key={member.name}
@@ -164,16 +159,16 @@ export const CommitteeSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="mb-16"
+          className="mb-12 sm:mb-16"
         >
-          <div className="flex items-center justify-center gap-3 mb-8">
-            <div className="w-10 h-10 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-teal-600 shadow-sm">
+          <div className="flex items-center justify-center gap-3 mb-6 sm:mb-8">
+            <div className="w-10 h-10 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-teal-600 shadow-sm shrink-0">
               <Award className="w-5 h-5" />
             </div>
-            <h3 className="text-2xl sm:text-3xl font-bold text-slate-900">Patrons</h3>
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-slate-900">{t('committee.patrons')}</h3>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {patrons.map((member, i) => (
               <CommitteeCard
                 key={member.name}
@@ -192,13 +187,13 @@ export const CommitteeSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="mb-16"
+          className="mb-12 sm:mb-16"
         >
-          <div className="flex items-center justify-center gap-3 mb-8">
-            <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-600 shadow-sm">
+          <div className="flex items-center justify-center gap-3 mb-6 sm:mb-8">
+            <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-600 shadow-sm shrink-0">
               <UserCheck className="w-5 h-5" />
             </div>
-            <h3 className="text-2xl sm:text-3xl font-bold text-slate-900">Convener</h3>
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-slate-900">{t('committee.convener')}</h3>
           </div>
 
           <div className="max-w-md mx-auto">
@@ -219,14 +214,14 @@ export const CommitteeSection = () => {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          <div className="flex items-center justify-center gap-3 mb-8">
-            <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-600 shadow-sm">
+          <div className="flex items-center justify-center gap-3 mb-6 sm:mb-8">
+            <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-600 shadow-sm shrink-0">
               <Users className="w-5 h-5" />
             </div>
-            <h3 className="text-2xl sm:text-3xl font-bold text-slate-900">Organizing Secretaries</h3>
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-slate-900">{t('committee.organizingSecretaries')}</h3>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-5xl mx-auto">
             {organizingSecretaries.map((member, i) => (
               <CommitteeCard
                 key={member.name}
@@ -270,7 +265,7 @@ const CommitteeCard = ({
       animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.45, delay }}
       className={`
-        relative rounded-2xl p-6 text-center transition-all duration-300 group
+        relative rounded-2xl p-4 sm:p-6 text-center transition-all duration-300 group
         ${
           isFeatured
             ? "bg-gradient-to-b from-emerald-50/50 via-white to-teal-50/30 border-2 border-emerald-400 shadow-xl shadow-emerald-500/10 hover:shadow-2xl hover:shadow-emerald-500/20 hover:-translate-y-1.5"
@@ -282,18 +277,18 @@ const CommitteeCard = ({
       <div className={`absolute top-0 left-1/2 -translate-x-1/2 w-16 h-1 rounded-b-full bg-gradient-to-r ${isFeatured ? "from-emerald-500 to-teal-400" : "from-slate-300 to-slate-400 group-hover:from-emerald-500 group-hover:to-teal-400"} transition-all duration-300`} />
 
       <div className="pt-2">
-        <h4 className={`font-bold text-slate-900 mb-2 leading-snug tracking-tight ${isFeatured ? "text-xl sm:text-2xl" : "text-lg"}`}>
+        <h4 className={`font-bold text-slate-900 mb-2 leading-snug tracking-tight ${isFeatured ? "text-lg sm:text-xl md:text-2xl" : "text-sm sm:text-base md:text-lg"}`}>
           {member.name}
         </h4>
 
         <div className="inline-block mb-3">
-          <span className={`text-xs px-3 py-1 rounded-full font-semibold border inline-block ${badgeClass}`}>
+          <span className={`text-[10px] sm:text-xs px-2 sm:px-3 py-1 rounded-full font-semibold border inline-block ${badgeClass}`}>
             {member.role}
           </span>
         </div>
 
-        <div className="flex items-center justify-center gap-1.5 text-xs text-slate-500 font-medium">
-          <Building2 className="w-3.5 h-3.5 text-slate-400 shrink-0" />
+        <div className="flex items-center justify-center gap-1.5 text-[10px] sm:text-xs text-slate-500 font-medium">
+          <Building2 className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-slate-400 shrink-0" />
           <span>{member.affiliation}</span>
         </div>
       </div>

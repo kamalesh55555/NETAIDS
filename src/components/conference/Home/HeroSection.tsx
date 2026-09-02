@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Calendar, MapPin, ArrowRight, Sparkles, Clock } from "lucide-react";
+import { Calendar, MapPin, ArrowRight, Sparkles, Clock, Monitor } from "lucide-react";
 import { useUser, useClerk } from "@clerk/clerk-react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 
+const REGISTER_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdmjHC8HeBkmv58fKOvvW8avgOhNSo-2diEgaX3eDO0HyUFHA/viewform?usp=header";
+
 export const HeroSection = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const isClerkEnabled = !!import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
   
   let isSignedIn = false;
@@ -32,7 +34,7 @@ export const HeroSection = () => {
   });
 
   useEffect(() => {
-    const targetDate = new Date("2026-09-17T09:00:00");
+    const targetDate = new Date("2026-09-16T09:00:00");
     const pad = (n: number) => String(n).padStart(2, "0");
 
     const updateTime = () => {
@@ -116,16 +118,50 @@ export const HeroSection = () => {
    
       <div className="container-conference relative z-10 text-center px-4 sm:px-6 pt-28 sm:pt-32 pb-16 max-w-7xl mx-auto">
 
+        {/* Language Buttons + Badge Row */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.07] border border-white/[0.12] mb-4 backdrop-blur-sm"
+          className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-4"
         >
-          <Sparkles className="w-3.5 h-3.5 text-emerald-400" />
-          <span className="text-white/90 text-xs sm:text-sm font-medium">
-            {t('hero.badge')}
-          </span>
+          {/* Tamil Button */}
+          {i18n.language !== 'ta' && (
+            <button
+              onClick={() => i18n.changeLanguage('ta')}
+              className="px-4 py-2 rounded-full bg-gradient-to-r from-orange-500/20 to-amber-500/20 border border-orange-400/30 text-orange-300 text-xs sm:text-sm font-medium hover:from-orange-500/30 hover:to-amber-500/30 hover:border-orange-400/50 transition-all duration-300 hover:scale-105 backdrop-blur-sm whitespace-nowrap"
+            >
+              தமிழில் படிக்க கிளிக் செய்க
+            </button>
+          )}
+
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.07] border border-white/[0.12] backdrop-blur-sm">
+            <Sparkles className="w-3.5 h-3.5 text-emerald-400" />
+            <span className="text-white/90 text-xs sm:text-sm font-medium">
+              {t('hero.badge')}
+            </span>
+          </div>
+
+          {/* Welsh Button */}
+          {i18n.language !== 'cy' && (
+            <button
+              onClick={() => i18n.changeLanguage('cy')}
+              className="px-4 py-2 rounded-full bg-gradient-to-r from-red-500/20 to-rose-500/20 border border-red-400/30 text-red-300 text-xs sm:text-sm font-medium hover:from-red-500/30 hover:to-rose-500/30 hover:border-red-400/50 transition-all duration-300 hover:scale-105 backdrop-blur-sm whitespace-nowrap"
+            >
+              Cliciwch yma am Gymraeg
+            </button>
+          )}
+
+          {/* Show English button when in non-English language */}
+          {i18n.language !== 'en' && (
+            <button
+              onClick={() => i18n.changeLanguage('en')}
+              className="px-4 py-2 rounded-full bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border border-blue-400/30 text-blue-300 text-xs sm:text-sm font-medium hover:from-blue-500/30 hover:to-cyan-500/30 hover:border-blue-400/50 transition-all duration-300 hover:scale-105 backdrop-blur-sm whitespace-nowrap"
+            >
+              Switch to English
+            </button>
+          )}
         </motion.div>
 
         <motion.p
@@ -146,6 +182,15 @@ export const HeroSection = () => {
         >
           {t('hero.titlePrefix')}<span className="bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-teal-300">{t('hero.titleSuffix')}</span>
         </motion.h1>
+
+        <motion.h3
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.35 }}
+          className="text-lg sm:text-xl md:text-2xl font-semibold text-emerald-300 mb-3 tracking-wide uppercase"
+        >
+          {t('hero.deptOfCse')}
+        </motion.h3>
 
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -180,14 +225,23 @@ export const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="mb-8 max-w-4xl mx-auto"
+          className="mb-8 max-w-4xl mx-auto flex justify-center"
         >
-          <p className="text-xs sm:text-sm md:text-base text-white/80">
-            {t('hero.organisedBy')}
-            <span className="text-emerald-400 font-semibold">
-              {t('hero.department')}
-            </span>
-          </p>
+          <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4">
+            <p className="text-xs sm:text-sm md:text-base text-white/80">
+              {t('hero.organisedBy')}
+              <span className="text-emerald-400 font-semibold">
+                {t('hero.department')}
+              </span>
+            </p>
+            <div className="bg-white/95 rounded-xl p-1.5 shadow-lg shadow-emerald-500/20 backdrop-blur-md hover:scale-105 transition-transform">
+              <img 
+                src="/di-logo.png" 
+                alt="Design and Innovation Club Logo" 
+                className="h-8 w-auto sm:h-10 object-contain" 
+              />
+            </div>
+          </div>
         </motion.div>
 
    
@@ -195,7 +249,7 @@ export const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.7 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 text-white/80 mb-6"
+          className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 text-white/80 mb-6"
         >
           <div className="flex items-center gap-2">
             <Calendar className="w-5 h-5 text-emerald-400" />
@@ -207,6 +261,14 @@ export const HeroSection = () => {
           <div className="flex items-center gap-2">
             <Clock className="w-5 h-5 text-emerald-400" />
             <span className="font-medium">{t('hero.time')}</span>
+          </div>
+
+          <div className="hidden sm:block w-1.5 h-1.5 rounded-full bg-emerald-400" />
+
+          {/* Hybrid Mode badge */}
+          <div className="flex items-center gap-2">
+            <Monitor className="w-5 h-5 text-emerald-400" />
+            <span className="font-medium text-emerald-300">{t('hero.mode')}</span>
           </div>
         </motion.div>
 
@@ -226,13 +288,13 @@ export const HeroSection = () => {
                     <span className="text-white/20 text-2xl font-light">:</span>
                   </div>
                 )}
-                <div className="text-center min-w-[65px] sm:min-w-[75px]">
+                <div className="text-center min-w-[60px] sm:min-w-[75px]">
                   <div className="bg-white/[0.06] rounded-xl px-3 py-2 mb-1.5 border border-white/[0.06]">
                     <span className="text-2xl sm:text-3xl md:text-4xl font-bold tabular-nums bg-clip-text text-transparent bg-gradient-to-b from-emerald-300 to-emerald-500">
                       {value}
                     </span>
                   </div>
-                  <div className="text-[9px] sm:text-[10px] uppercase tracking-[0.2em] text-white/50 font-medium">
+                  <div className="text-[8px] sm:text-[10px] uppercase tracking-[0.2em] text-white/50 font-medium">
                     {t(`hero.countdown.${key}`)}
                   </div>
                 </div>
@@ -250,16 +312,16 @@ export const HeroSection = () => {
           className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-10 bg-white/[0.03] border border-white/[0.08] rounded-3xl p-6 sm:p-8 max-w-3xl mx-auto backdrop-blur-sm"
         >
           <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
-            <span className="text-white/70 text-xs sm:text-sm uppercase tracking-wider mb-2 font-medium">Registration Cost (Per Paper)</span>
+            <span className="text-white/70 text-xs sm:text-sm uppercase tracking-wider mb-2 font-medium">{t('hero.registrationCost')}</span>
             <div className="flex items-center gap-4">
               <div className="flex items-baseline gap-1.5">
                 <span className="text-emerald-400 font-bold text-3xl">₹1500</span>
-                <span className="text-sm font-medium text-white/50">India</span>
+                <span className="text-sm font-medium text-white/50">{t('hero.india')}</span>
               </div>
               <div className="w-1.5 h-1.5 rounded-full bg-white/20"></div>
               <div className="flex items-baseline gap-1.5">
                 <span className="text-emerald-400 font-bold text-3xl">£15</span>
-                <span className="text-sm font-medium text-white/50">UK</span>
+                <span className="text-sm font-medium text-white/50">{t('hero.uk')}</span>
               </div>
             </div>
           </div>
@@ -267,7 +329,9 @@ export const HeroSection = () => {
           <div className="hidden sm:block w-px h-16 bg-white/10"></div>
           
           <a
-            href="/register"
+            href={REGISTER_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="group relative flex items-center justify-center gap-2 px-8 py-4 text-base sm:text-lg font-semibold rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-500 text-white hover:from-emerald-500 hover:to-emerald-400 hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg shadow-emerald-900/30 animate-pulse-glow whitespace-nowrap"
           >
             {t('hero.registerBtn')}
